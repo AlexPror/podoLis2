@@ -32,7 +32,7 @@ const openWhatsApp = () => {
       <p class="hero-section__address-label">Наш адрес:</p>
       <p class="hero-section__address-text">г. Калуга, ул. Воронина 3, офис 104, первый этаж</p>
       <div class="footer-block block-price">
-        <button class="footer-link" @click="scrollToSection('contact')" aria-label="Прайс услуг">
+        <button class="footer-link" @click="scrollToSection('contacts')" aria-label="Прайс услуг">
           ПРАЙС УСЛУГ
         </button>
       </div>
