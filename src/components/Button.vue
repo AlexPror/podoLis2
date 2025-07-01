@@ -60,8 +60,6 @@ const onClick = (event: MouseEvent) => {
   white-space: nowrap;
   cursor: pointer;
   letter-spacing: 1px;
-  text-decoration: none;
-  font-family: $base-font;
   font-weight: 700;
   background-color: $primary-color;
   border: none;

@@ -11,9 +11,7 @@ import SocialIcons from './SocialIcons.vue'
       <AppLogo />
       <HeaderNav class="header__nav" />
       <div class="header__wrap">
-        <div class="header__social">
-          <SocialIcons />
-        </div>
+        <SocialIcons />
         <div class="header__actions">
           <a href="tel:+79533217582" class="header__phone"> +7 953 321-75-82 </a>
           <a href="tel:+79141726408" class="header__phone"> +7 914 172-64-08 </a>
@@ -25,14 +23,8 @@ import SocialIcons from './SocialIcons.vue'
 
 <style scoped lang="scss">
 .header {
-  color: $white;
-  background-color: rgba($white, 0.2);
-  padding: 0 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+  background-color: $white;
+  padding: 1rem 20px;
 }
 
 .header__container {
@@ -51,17 +43,11 @@ import SocialIcons from './SocialIcons.vue'
   gap: 40px;
 }
 
-.header__social {
-  padding-top: 10px;
-}
-
 // Phone
 .header__phone {
-  font-family: $base-font;
-  font-size: 20px;
+  font-size: 1.15rem;
+  font-weight: 600;
   letter-spacing: 1px;
-  color: $white;
-  text-decoration: none;
 
   &:hover {
     color: $primary-color;
@@ -93,7 +79,7 @@ import SocialIcons from './SocialIcons.vue'
 // .header__phone-button {
 //   background-color: $primary-color;
 //   border: none;
-//   font-family: $base-font;
+//
 //   border-radius: 6px;
 //   padding: 8px 16px;
 //   font-weight: 600;

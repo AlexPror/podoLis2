@@ -18,6 +18,7 @@ const links = [
 <style scoped lang="scss">
 .header-nav {
   display: flex;
+  gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -36,12 +37,11 @@ const links = [
 }
 
 .header-nav__link {
-  font-weight: 500;
+  border-bottom: 1px solid $link-color;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  color: $white;
-  font-size: 20px;
-  padding: 2rem 1.5rem;
-  text-decoration: none;
   transition: $transition-base;
 
   @media (max-width: 768px) {
@@ -49,9 +49,10 @@ const links = [
     font-size: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-}
 
-.header-nav__link:hover {
-  color: $primary-color;
+  &:hover {
+    color: $primary-color;
+    border-bottom-color: transparent;
+  }
 }
 </style>

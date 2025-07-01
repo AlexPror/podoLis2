@@ -43,7 +43,7 @@ const openWhatsApp = () => {
 .contacts {
   display: flex;
   padding: 75px 0 60px;
-  font-family: $base-font;
+
   font-size: 20px;
   color: #333;
   align-items: center;
@@ -71,7 +71,6 @@ const openWhatsApp = () => {
 
   &__phone-link,
   &__whatsapp-link {
-    text-decoration: none;
     cursor: pointer;
     color: $primary-color;
     display: inline-block;

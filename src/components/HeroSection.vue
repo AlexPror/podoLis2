@@ -12,12 +12,11 @@ import Button from '@/components/Button.vue'
 // }
 
 const scrollToSection = (id: string) => {
-  const el = document.getElementById(id)
-  if (el) el.scrollIntoView({ behavior: 'smooth' })
-}
+  console.log(id)
 
-const openWhatsApp = () => {
-  window.open('https://wa.me/+79533217582', '_blank')
+  const el = document.getElementById(id)
+  console.log(el)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 </script>
 

@@ -12,7 +12,7 @@ const scrollToForm = () => {
 
 <style scoped lang="scss">
 .call-button {
-  font-family: $base-font;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 125%;

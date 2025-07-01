@@ -63,7 +63,7 @@ const scrollToSection = (id: string) => {
 <style scoped lang="scss">
 .footer-section {
   background-color: $white;
-  color: $black;
+  color: $gray;
   padding: 40px 20px 20px;
   font-size: 14px;
 }
@@ -98,17 +98,17 @@ const scrollToSection = (id: string) => {
 .info-text {
   font-size: 13px;
   line-height: 1.4;
-  color: $black;
+  color: $gray;
 }
 
 .footer-link {
-  font-family: $base-font;
+
   background: none;
   border: none;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
-  color: $black;
+  color: $gray;
   text-transform: uppercase;
   cursor: pointer;
   text-align: left;
@@ -130,7 +130,7 @@ const scrollToSection = (id: string) => {
 
 .reviews-text {
   font-size: 13px;
-  color: $black;
+  color: $gray;
   line-height: 1.4;
 }
 

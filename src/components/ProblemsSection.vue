@@ -202,11 +202,10 @@ const closeModal = () => {
     background 0.3s,
     color 0.3s;
   // font-weight: 500;
-  font-family: $base-font;
+
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
 
@@ -214,7 +213,6 @@ const closeModal = () => {
   &:focus {
     background-color: #f0785a;
     color: white;
-    text-decoration: none;
     outline: none;
   }
 }
@@ -226,7 +224,6 @@ const closeModal = () => {
   font-weight: 700;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
   display: inline-block;
 }
 </style>
