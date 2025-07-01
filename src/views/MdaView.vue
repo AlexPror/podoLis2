@@ -5,6 +5,6 @@ import Container from '@/components/Container.vue';
 
 <template>
   <Container>
-      <h1>This is an about page</h1>
+      <h1>Mda-страница</h1>
   </Container>
 </template>

@@ -41,23 +41,22 @@ const openWhatsApp = () => {
 
 <style scoped lang="scss">
 .contacts {
-  display: flex;
-  padding: 75px 0 60px;
-
-  font-size: 20px;
-  color: #333;
   align-items: center;
-  justify-content: center;
+  color: #333;
+  display: flex;
   flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: center;
+  padding: 75px 0 60px;
 
   &__info {
     flex: 1 1 300px;
   }
 
   &__title {
-    margin-bottom: 20px;
-    font-weight: bold;
     font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 
   &__phones {
@@ -71,8 +70,8 @@ const openWhatsApp = () => {
 
   &__phone-link,
   &__whatsapp-link {
-    cursor: pointer;
     color: $primary-color;
+    cursor: pointer;
     display: inline-block;
     transition: color 0.3s ease;
   }
@@ -97,9 +96,9 @@ const openWhatsApp = () => {
 
     &-link {
       background-color: #f0f0f0;
-      padding: 5px 10px;
       border-radius: 6px;
       box-shadow: none;
+      padding: 5px 10px;
       transition:
         background-color 0.3s ease,
         color 0.3s ease;
@@ -116,24 +115,24 @@ const openWhatsApp = () => {
   }
 
   &__map {
-    flex: 1 1 280px;
     border-radius: 8px;
-    overflow: hidden;
+    flex: 1 1 280px;
     height: 571px;
     max-height: 571px;
     min-height: 571px;
+    overflow: hidden;
   }
 
   &__iframe {
     border: none;
-    width: 100%;
-    height: 100%;
     display: block;
+    height: 100%;
+    width: 100%;
   }
 }
 
 /* Адаптив */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .contacts {
     flex-direction: column;
   }

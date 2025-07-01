@@ -1,16 +1,8 @@
-<script lang="ts" setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-const route = useRoute()
-console.log(route)
-const isHome = computed(() => {
-  return true ?
-})
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="logo">
-    <img class="logo__img" src="../assets/images/logo.svg" alt="" />{{ isHome }}
+    <img class="logo__img" src="../assets/images/logo2.svg" alt="" />
   </div>
 </template>
 

@@ -31,6 +31,8 @@
   background-repeat: no-repeat;
   height: 2rem;
   display: block;
+  height: 2rem;
+  height: auto;
   max-width: 100%;
   transition: 0.15s ease-in-out;
   width: 2rem;

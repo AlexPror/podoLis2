@@ -12,16 +12,15 @@ const scrollToForm = () => {
 
 <style scoped lang="scss">
 .call-button {
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 125%;
-  text-transform: uppercase;
-  color: $white;
   background-color: $primary-color;
   border: none;
-  padding: 10px 50px;
+  color: $white;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 125%;
+  padding: 10px 50px;
+  text-transform: uppercase;
 }
 
 .call-button:hover {

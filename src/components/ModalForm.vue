@@ -137,37 +137,37 @@ const submitForm = () => {
 
 <style scoped>
 .modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 9999;
+  background: rgb(0 0 0 / 50%);
+  display: flex;
+  inset: 0;
+  justify-content: center;
   padding: 20px;
+  position: fixed;
+  z-index: 9999;
 }
 
 .modal {
   background: white;
   border-radius: 12px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 20%);
   max-width: 400px;
-  width: 100%;
   padding: 30px 25px;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
+  width: 100%;
 }
 
 .modal-close {
-  position: absolute;
-  top: 12px;
-  right: 15px;
   background: none;
   border: none;
+  color: #999;
+  cursor: pointer;
   font-size: 2rem;
   line-height: 1;
-  cursor: pointer;
-  color: #999;
+  position: absolute;
+  right: 15px;
+  top: 12px;
 }
 
 .modal-close:hover {
@@ -182,28 +182,28 @@ const submitForm = () => {
 }
 
 .modal-form label {
+  color: #333;
   display: flex;
   flex-direction: column;
-  font-weight: 600;
   font-size: 1rem;
-  color: #333;
+  font-weight: 600;
 }
 
 .modal-form input,
 .modal-form textarea {
-  margin-top: 6px;
-  padding: 8px 10px;
-  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 6px;
+  padding: 8px 10px;
   resize: vertical;
 }
 
 .modal-form .consent {
-  flex-direction: row;
   align-items: center;
-  font-weight: 400;
+  flex-direction: row;
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .modal-form .consent input {
@@ -213,8 +213,8 @@ const submitForm = () => {
 
 .error-message {
   color: #d94a1a;
+  display: block;
   font-size: 0.85rem;
   margin-top: 4px;
-  display: block;
 }
 </style>

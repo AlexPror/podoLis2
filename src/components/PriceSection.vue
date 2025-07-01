@@ -160,27 +160,26 @@ const selectedService = computed(() => services[selectedIndex.value])
 }
 
 .price__table-wrapper {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  width: 100%;
   padding: 0 10px;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .price__table {
-  width: 100%;
-  max-width: 960px;
   border-collapse: collapse;
-
-  font-size: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  font-size: 20px;
+  max-width: 960px;
   overflow: hidden;
+  width: 100%;
 }
 
 .price__table thead th {
-  border-bottom: 1px solid black;
   background-color: $white;
+  border-bottom: 1px solid black;
   color: $gray;
   font-weight: 700;
   padding: 14px 12px;
@@ -205,9 +204,9 @@ const selectedService = computed(() => services[selectedIndex.value])
 }
 
 .price__table tbody td {
-  padding: 12px 12px;
-  font-weight: 500;
   border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  padding: 12px;
   vertical-align: middle;
 }
 
@@ -217,7 +216,7 @@ const selectedService = computed(() => services[selectedIndex.value])
   word-wrap: break-word;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .price__table-wrapper {
     padding: 0 5px;
   }
@@ -235,25 +234,25 @@ const selectedService = computed(() => services[selectedIndex.value])
 .price__buttons {
   display: flex;
   gap: 10px;
-  width: 100%;
   padding: 100px 0;
+  width: 100%;
 
 }
 
 .price__button {
-  flex: 1 1 0;
   background: $white;
   border: none;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 14px 0;
+  border-radius: 6px;
   cursor: pointer;
+  flex: 1 1 0;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 14px 0;
   text-align: center;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
   user-select: none;
-  border-radius: 6px;
 }
 
 .price__button:hover {
@@ -263,22 +262,21 @@ const selectedService = computed(() => services[selectedIndex.value])
 
 .price__button.active {
   background-color: $primary-color;
+  box-shadow: 0 4px 8px rgb(246 98 62 / 50%);
   color: $white;
   font-weight: 700;
-  box-shadow: 0 4px 8px rgba(246, 98, 62, 0.5);
 }
 //Правила резервирования времени
 .reservation-rules {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 3rem;
-  text-align: left;
-
   color: $gray;
   line-height: 1.6;
+  margin: 0 auto;
+  margin-top: 3rem;
   max-width: 960px;
-  width: 100%; // растягиваем по всей ширине родителя
   padding: 1.5rem 2rem; // добавляем внутренние отступы для удобства чтения
+  text-align: center;
+  text-align: left;
+  width: 100%; // растягиваем по всей ширине родителя
 
   h4 {
     font-size: 1.5rem;
@@ -287,8 +285,8 @@ const selectedService = computed(() => services[selectedIndex.value])
   }
 
   ol {
-    padding-left: 1.5rem; // отступ слева для списка, чтобы не прилипал к краю
     margin-bottom: 1.5rem; // отступ снизу для списка
+    padding-left: 1.5rem; // отступ слева для списка, чтобы не прилипал к краю
   }
 
   li {

@@ -1,17 +1,18 @@
 <script setup lang="ts">
 const links = [
-  { name: 'Главная', href: '#home' },
-  { name: 'О нас', href: '#about' },
+  { name: 'Главная', href: '/' },
+  { name: 'О нас', href: '/about' },
   { name: 'Прайс услуг', href: '#price' },
   { name: 'Контакты', href: '#contacts' },
+  { name: 'Мда-страница', href: '/mda' },
 ]
 </script>
 
 <template>
   <nav class="header-nav">
-    <a v-for="link in links" :key="link.name" class="header-nav__link" :href="link.href">
+    <RouterLink v-for="link in links" :key="link.name" class="header-nav__link" :to="link.href">
       {{ link.name }}
-    </a>
+    </RouterLink>
   </nav>
 </template>
 
@@ -20,39 +21,39 @@ const links = [
   display: flex;
   gap: 2rem;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
+    background-color: #000c;
     flex-direction: column;
-    background-color: #000000cc;
-    position: fixed;
-    top: 60px;
-    right: 0;
-    width: 100%;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 100%;
     z-index: 1000;
   }
 }
 
 .header-nav__link {
   border-bottom: 1px solid $link-color;
-  font-weight: 700;
   font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: $transition-base;
 
-  @media (max-width: 768px) {
-    padding: 1rem 1.5rem;
+  @media (width <= 768px) {
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
     font-size: 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
   }
 
   &:hover {
-    color: $primary-color;
     border-bottom-color: transparent;
+    color: $primary-color;
   }
 }
 </style>

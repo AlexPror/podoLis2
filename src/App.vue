@@ -1,23 +1,31 @@
 <script setup lang="ts">
 import AppHeader from './components/AppHeader.vue'
-import ContactSection from './components/ContactSection.vue'
-import FooterSection from './components/FooterSection.vue'
-import PriceSection from './components/PriceSection.vue'
-import HeroSection from './components/HeroSection.vue'
-import ProblemsSection from './components/ProblemsSection.vue'
-import ModalForm from './components/ModalForm.vue'
+import AppFooter from '@/components/AppFooter.vue'
 </script>
 
 <template>
   <div class="app">
-    <AppHeader />
-    <main>
-      <HeroSection />
-      <ProblemsSection />
-      <ModalForm />
-      <PriceSection />
-      <ContactSection />
-      <FooterSection />
+    <AppHeader class="app__header" />
+    <main class="app__main">
+      <RouterView />
     </main>
+    <AppFooter class="app__footer" />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app__header,
+.app__footer {
+  flex: 0;
+}
+
+.app__main {
+  flex: 1 0 auto;
+}
+</style>

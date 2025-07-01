@@ -41,54 +41,54 @@ const scrollToSection = (id: string) => {
 
 <style scoped lang="scss">
 .hero-section {
-  position: relative;
   height: 90vh;
   overflow: hidden;
+  position: relative;
   user-select: none;
 
   &__background {
-    position: absolute;
-    inset: 0;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0;
+    position: absolute;
     z-index: 0;
   }
 
   &__overlay {
-    position: absolute;
+    background-color: rgb(0 0 0 / 40%);
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
     pointer-events: none;
+    position: absolute;
+    z-index: 1;
   }
 
   &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-items: center;
     color: white;
-    font-weight: 500;
-    text-align: center;
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
-    font-size: 20px;
-    line-height: 1.4;
-    z-index: 10;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
     gap: 25px;
-    align-items: center;
+    left: 50%;
+    line-height: 1.4;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 6px rgb(0 0 0 / 70%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       font-size: 16px;
       gap: 16px;
+      max-width: 350px;
       padding: 0 15px;
       width: 90%;
-      max-width: 350px;
     }
 
-    @media (max-width: 400px) {
+    @media (width <= 400px) {
       font-size: 14px;
       gap: 12px;
     }
