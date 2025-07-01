@@ -12,10 +12,10 @@ import Button from '@/components/Button.vue'
 // }
 
 const scrollToSection = (id: string) => {
-  console.log(id);
+  console.log(id)
 
   const el = document.getElementById(id)
-  console.log(el);
+  console.log(el)
   if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 </script>
@@ -31,9 +31,9 @@ const scrollToSection = (id: string) => {
       <p class="hero-section__address-label">Наш адрес:</p>
       <p class="hero-section__address-text">г. Калуга, ул. Воронина 3, офис 104, первый этаж</p>
       <div class="footer-block block-price">
-        <Button @click="scrollToSection('contacts')">
-          Прайс услуг
-        </Button>
+        <button class="footer-link" @click="scrollToSection('contacts')" aria-label="Прайс услуг">
+          ПРАЙС УСЛУГ
+        </button>
       </div>
     </div>
   </section>

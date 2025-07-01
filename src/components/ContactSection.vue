@@ -13,10 +13,10 @@ const openWhatsApp = () => {
         <h3 class="contacts__title">Наши контакты</h3>
         <div class="contacts__phones">
           <span class="contacts__label">Мессенджер:</span>
-          <a href="tel:+79533217582" class="contacts__phone-link">+7 (953) 321-75-82</a>
+          <a href="tel:+79533217582" class="contacts__phone-link">+7 953 321-75-82</a>
           <br />
           <span class="contacts__label">Телефон:</span>
-          <a href="tel:+79141726408" class="contacts__phone-link">+7 (914) 172-64-08</a>
+          <a href="tel:+79141726408" class="contacts__phone-link">+7 914 172-64-08</a>
         </div>
         <div class="contacts__worktime">Мы работаем ежедневно с 9 до 20 часов</div>
         <div class="contacts__whatsapp">
