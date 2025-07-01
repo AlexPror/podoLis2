@@ -6,8 +6,8 @@
 
 <style scoped lang="scss">
 .container {
-  max-width: 1680px;
   margin: 0 auto;
+  max-width: 1680px;
   padding: 0 20px;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 0 auto 30px;
   justify-content: space-between;
+  margin: 0 auto 30px;
 }
 </style>

@@ -96,9 +96,9 @@ const closeModal = () => {
 
 <style scoped lang="scss">
 .problems-section {
-  padding: 50px 20px 50px;
   // max-width: 1200px;
   margin: 0 auto;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -108,15 +108,15 @@ const closeModal = () => {
 }
 
 .problems-section .subtitle {
+  color: #464646;
   font-size: 1.25rem;
   margin-bottom: 50px;
-  color: #464646;
 }
 
 .problems-section .cards {
+  align-items: stretch;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
   gap: 2rem;
   justify-content: center;
 }
@@ -125,36 +125,36 @@ const closeModal = () => {
   background: $white;
   border: 1px solid #eee;
   border-radius: 12px;
-  flex: 1 0 0;
-  overflow: hidden;
-  max-width: 360px;
   display: flex;
+  flex: 1 0 0;
   flex-direction: column;
+  max-width: 360px;
+  overflow: hidden;
 }
 
 .problems-section .card-image {
-  width: 100%;
   height: 200px;
+  width: 100%;
 }
 
 .problems-section .card-image img {
-  width: 100%;
+  display: block;
   height: 100%;
   object-fit: cover;
-  display: block;
+  width: 100%;
 }
 
 .problems-section .card-content {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
   text-align: left;
 }
 
 .problems-section .card-title {
-  font-weight: 700;
   font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
@@ -164,22 +164,22 @@ const closeModal = () => {
 }
 
 .problems-section .card-list li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  font-size: 1rem;
   color: #464646;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
 }
 
 .problems-section .card-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 10px;
-  height: 10px;
   background-color: $primary-color;
   border-radius: 50%;
+  content: '';
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 10px;
 }
 
 .services-card {
@@ -188,26 +188,26 @@ const closeModal = () => {
 }
 
 .card-buttons {
-  margin-top: auto;
   display: flex;
-  justify-content: center;
   gap: 0.5rem;
+  justify-content: center;
+  margin-top: auto;
   padding: 10px;
 }
 
 .btn-orange {
   background-color: $primary-color;
-  color: $white;
-  transition:
-    background 0.3s,
-    color 0.3s;
   // font-weight: 500;
 
   border: none;
   border-radius: 4px;
+  color: $white;
   cursor: pointer;
-  text-transform: uppercase;
   display: inline-block;
+  text-transform: uppercase;
+  transition:
+    background 0.3s,
+    color 0.3s;
 
   &:hover,
   &:focus {
@@ -218,12 +218,12 @@ const closeModal = () => {
 }
 
 .all-services-button {
-  margin-top: 60px;
-  padding: 14px 36px;
-  font-size: 20px;
-  font-weight: 700;
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 60px;
+  padding: 14px 36px;
 }
 </style>

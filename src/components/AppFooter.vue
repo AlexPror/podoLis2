@@ -64,16 +64,16 @@ const scrollToSection = (id: string) => {
 .footer-section {
   background-color: $white;
   color: $gray;
-  padding: 40px 20px 20px;
   font-size: 14px;
+  padding: 40px 20px 20px;
 }
 
 .footer-block {
-  flex: 1 1 220px;
-  min-width: 220px;
   display: flex;
+  flex: 1 1 220px;
   flex-direction: column;
   gap: 15px;
+  min-width: 220px;
 }
 
 .block-info {
@@ -96,53 +96,52 @@ const scrollToSection = (id: string) => {
 }
 
 .info-text {
+  color: $gray;
   font-size: 13px;
   line-height: 1.4;
-  color: $gray;
 }
 
 .footer-link {
-
   background: none;
   border: none;
-  padding: 0;
-  font-weight: 700;
-  font-size: 20px;
   color: $gray;
-  text-transform: uppercase;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
   text-align: left;
+  text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #ff6600;
+  color: #f60;
   outline: none;
 }
 
 .footer-title {
-  font-weight: 700;
   font-size: 20px;
-  text-transform: uppercase;
+  font-weight: 700;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .reviews-text {
-  font-size: 13px;
   color: $gray;
+  font-size: 13px;
   line-height: 1.4;
 }
 
 .footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
   border-top: 1px solid #444;
-  padding-top: 15px;
   display: flex;
+  font-size: 12px;
   gap: 20px;
   justify-content: center;
-  font-size: 12px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 15px;
 }
 
 .footer-policy-link {
@@ -153,23 +152,25 @@ const scrollToSection = (id: string) => {
 
 .footer-policy-link:hover,
 .footer-policy-link:focus {
-  color: #ff6600;
+  color: #f60;
   outline: none;
 }
 
 /* Адаптив */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .footer-container {
     flex-direction: column;
     gap: 40px;
   }
+
   .footer-block {
     min-width: 100%;
   }
+
   .footer-bottom {
     flex-direction: column;
-    gap: 10px;
     font-size: 13px;
+    gap: 10px;
   }
 }
 </style>

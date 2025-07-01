@@ -28,8 +28,8 @@ import SocialIcons from './SocialIcons.vue'
 }
 
 .header__container {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .header__nav {
@@ -38,8 +38,8 @@ import SocialIcons from './SocialIcons.vue'
 }
 
 .header__wrap {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 40px;
 }
 
@@ -79,7 +79,6 @@ import SocialIcons from './SocialIcons.vue'
 // .header__phone-button {
 //   background-color: $primary-color;
 //   border: none;
-//
 //   border-radius: 6px;
 //   padding: 8px 16px;
 //   font-weight: 600;

@@ -30,7 +30,6 @@
   background-size: contain;
   display: block;
   height: 2rem;
-  height: auto;
   max-width: 100%;
   transition: .15s ease-in-out;
   width: 2rem;

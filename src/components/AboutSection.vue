@@ -29,8 +29,8 @@
 }
 
 .about__image img {
-  max-width: 100%;
-  height: auto;
   border-radius: 8px;
+  height: auto;
+  max-width: 100%;
 }
 </style>

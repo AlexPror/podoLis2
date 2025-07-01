@@ -1,9 +1,19 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { computed } from 'vue'
+import { useRoute, RouterLink } from 'vue-router'
+const route = useRoute()
+console.log(route);
+
+const isHome = computed(() => {
+  return route.name === 'home'
+})
+
+</script>
 
 <template>
-  <div class="logo">
+  <component class="logo" :is="isHome ? 'div' : RouterLink">
     <img class="logo__img" src="../assets/images/logo2.svg" alt="" />
-  </div>
+  </component>
 </template>
 
 <style lang="scss" scoped>

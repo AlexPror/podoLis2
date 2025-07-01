@@ -55,28 +55,28 @@ const onClick = (event: MouseEvent) => {
 
 <style scoped lang="scss">
 .button {
-  text-transform: uppercase;
-  color: $white;
-  white-space: nowrap;
-  cursor: pointer;
-  letter-spacing: 1px;
-  font-weight: 700;
   background-color: $primary-color;
   border: none;
   border-radius: 0.25rem;
+  color: $white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   outline: none;
   padding: 0.85rem 1.5rem;
+  text-transform: uppercase;
   transition: $transition-base;
-  font-size: 1rem;
+  white-space: nowrap;
 
   &--small {
-    padding: 0.5rem 1rem;
     font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
 
   &--large {
-    padding: 1.2rem 2rem;
     font-size: 1.2rem;
+    padding: 1.2rem 2rem;
   }
 
   &--primary {
