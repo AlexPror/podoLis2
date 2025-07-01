@@ -7,134 +7,44 @@
       aria-label="Позвонить в WhatsApp"
       target="_blank"
       rel="noopener"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="40"
-        height="40"
-        viewBox="0,0,256,256"
-      >
-        <g
-          fill="none"
-          fill-rule="none"
-          stroke="none"
-          stroke-width="1"
-          stroke-linecap="butt"
-          stroke-linejoin="miter"
-          stroke-miterlimit="10"
-          stroke-dasharray=""
-          stroke-dashoffset="0"
-          font-family="none"
-          font-weight="none"
-          font-size="none"
-          text-anchor="none"
-          style="mix-blend-mode: normal"
-        >
-          <g transform="scale(5.33333,5.33333)">
-            <path
-              d="M4.868,43.303l2.694,-9.835c-1.662,-2.878 -2.536,-6.144 -2.535,-9.489c0.005,-10.465 8.521,-18.979 18.987,-18.979c5.079,0.002 9.845,1.979 13.43,5.566c3.584,3.588 5.558,8.356 5.556,13.428c-0.004,10.465 -8.522,18.98 -18.986,18.98c-0.001,0 0,0 0,0h-0.008c-3.177,-0.001 -6.3,-0.798 -9.073,-2.311z"
-              fill="#ffffff"
-              fill-rule="nonzero"
-            ></path>
-            <path
-              d="M4.868,43.803c-0.132,0 -0.26,-0.052 -0.355,-0.148c-0.125,-0.127 -0.174,-0.312 -0.127,-0.483l2.639,-9.636c-1.636,-2.906 -2.499,-6.206 -2.497,-9.556c0.004,-10.742 8.745,-19.48 19.486,-19.48c5.21,0.002 10.105,2.031 13.784,5.713c3.679,3.683 5.704,8.577 5.702,13.781c-0.004,10.741 -8.746,19.48 -19.486,19.48c-3.189,-0.001 -6.344,-0.788 -9.144,-2.277l-9.875,2.589c-0.042,0.012 -0.084,0.017 -0.127,0.017z"
-              fill="#ffffff"
-              fill-rule="nonzero"
-            ></path>
-            <path
-              d="M24.014,5c5.079,0.002 9.845,1.979 13.43,5.566c3.584,3.588 5.558,8.356 5.556,13.428c-0.004,10.465 -8.522,18.98 -18.986,18.98h-0.008c-3.177,-0.001 -6.3,-0.798 -9.073,-2.311l-10.065,2.64l2.694,-9.835c-1.662,-2.878 -2.536,-6.144 -2.535,-9.489c0.005,-10.465 8.521,-18.979 18.987,-18.979M24.014,42.974v0v0M24.014,42.974v0v0M24.014,4v0c-11.016,0 -19.982,8.962 -19.987,19.979c-0.001,3.367 0.849,6.685 2.461,9.622l-2.585,9.439c-0.094,0.345 0.002,0.713 0.254,0.967c0.19,0.192 0.447,0.297 0.711,0.297c0.085,0 0.17,-0.011 0.254,-0.033l9.687,-2.54c2.828,1.468 5.998,2.243 9.197,2.244c11.024,0 19.99,-8.963 19.995,-19.98c0.002,-5.339 -2.075,-10.359 -5.848,-14.135c-3.775,-3.777 -8.796,-5.858 -14.139,-5.86z"
-              fill="#cfd8dc"
-              fill-rule="nonzero"
-            ></path>
-            <path
-              d="M35.176,12.832c-2.98,-2.982 -6.941,-4.625 -11.157,-4.626c-8.704,0 -15.783,7.076 -15.787,15.774c-0.001,2.981 0.833,5.883 2.413,8.396l0.376,0.597l-1.595,5.821l5.973,-1.566l0.577,0.342c2.422,1.438 5.2,2.198 8.032,2.199h0.006c8.698,0 15.777,-7.077 15.78,-15.776c0.001,-4.215 -1.638,-8.179 -4.618,-11.161z"
-              fill="#ff5e00"
-              fill-rule="nonzero"
-            ></path>
-            <path
-              d="M19.268,16.045c-0.355,-0.79 -0.729,-0.806 -1.068,-0.82c-0.277,-0.012 -0.593,-0.011 -0.909,-0.011c-0.316,0 -0.83,0.119 -1.265,0.594c-0.435,0.475 -1.661,1.622 -1.661,3.956c0,2.334 1.7,4.59 1.937,4.906c0.237,0.316 3.282,5.259 8.104,7.161c4.007,1.58 4.823,1.266 5.693,1.187c0.87,-0.079 2.807,-1.147 3.202,-2.255c0.395,-1.108 0.395,-2.057 0.277,-2.255c-0.119,-0.198 -0.435,-0.316 -0.909,-0.554c-0.474,-0.238 -2.807,-1.385 -3.242,-1.543c-0.435,-0.158 -0.751,-0.237 -1.068,0.238c-0.316,0.474 -1.225,1.543 -1.502,1.859c-0.277,0.317 -0.554,0.357 -1.028,0.119c-0.474,-0.238 -2.002,-0.738 -3.815,-2.354c-1.41,-1.257 -2.362,-2.81 -2.639,-3.285c-0.277,-0.474 -0.03,-0.731 0.208,-0.968c0.213,-0.213 0.474,-0.554 0.712,-0.831c0.237,-0.277 0.316,-0.475 0.474,-0.791c0.158,-0.317 0.079,-0.594 -0.04,-0.831c-0.117,-0.238 -1.039,-2.584 -1.461,-3.522z"
-              fill="#ffffff"
-              fill-rule="evenodd"
-            ></path>
-          </g>
-        </g>
-      </svg>
-    </a>
+      class="social-icons__item social-icons__item--whatsapp"
+    />
     <a
       href="https://t.me/podolispodo"
       aria-label="Перейти в Telegram группу"
       target="_blank"
       rel="noopener"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="40"
-        height="40"
-        viewBox="0,0,256,256"
-      >
-        <g
-          fill="none"
-          fill-rule="nonzero"
-          stroke="none"
-          stroke-width="1"
-          stroke-linecap="butt"
-          stroke-linejoin="miter"
-          stroke-miterlimit="10"
-          stroke-dasharray=""
-          stroke-dashoffset="0"
-          font-family="none"
-          font-weight="none"
-          font-size="none"
-          text-anchor="none"
-          style="mix-blend-mode: normal"
-        >
-          <g transform="scale(5.33333,5.33333)">
-            <path
-              d="M24,4c-11.04569,0 -20,8.95431 -20,20c0,11.04569 8.95431,20 20,20c11.04569,0 20,-8.95431 20,-20c0,-11.04569 -8.95431,-20 -20,-20z"
-              fill="#ff5e00"
-            ></path>
-            <path
-              d="M33.95,15l-3.746,19.126c0,0 -0.161,0.874 -1.245,0.874c-0.576,0 -0.873,-0.274 -0.873,-0.274l-8.114,-6.733l-3.97,-2.001l-5.095,-1.355c0,0 -0.907,-0.262 -0.907,-1.012c0,-0.625 0.933,-0.923 0.933,-0.923l21.316,-8.468c-0.001,-0.001 0.651,-0.235 1.126,-0.234c0.292,0 0.625,0.125 0.625,0.5c0,0.25 -0.05,0.5 -0.05,0.5z"
-              fill="#ffffff"
-            ></path>
-            <path
-              d="M23,30.505l-3.426,3.374c0,0 -0.149,0.115 -0.348,0.12c-0.069,0.002 -0.143,-0.009 -0.219,-0.043l0.964,-5.965z"
-              fill="#b0bec5"
-            ></path>
-            <path
-              d="M29.897,18.196c-0.169,-0.22 -0.481,-0.26 -0.701,-0.093l-13.196,7.897c0,0 2.106,5.892 2.427,6.912c0.322,1.021 0.58,1.045 0.58,1.045l0.964,-5.965l9.832,-9.096c0.22,-0.167 0.261,-0.48 0.094,-0.7z"
-              fill="#cfd8dc"
-            ></path>
-          </g>
-        </g>
-      </svg>
-    </a>
+      class="social-icons__item social-icons__item--telegram"
+    />
   </div>
 </template>
 
 <style scoped lang="scss">
 .social-icons {
   display: flex;
-  height: 40px;
-  gap: 10px;
+  gap: 1rem;
 }
 
-.social-icons a {
-  display: inline-block;
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease;
+.social-icons__item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 2rem;
+  height: auto;
+  max-width: 100%;
+  transition: .15s ease-in-out;
+  width: 2rem;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
-.social-icons a:hover,
-.social-icons a:focus {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 5px $black);
-  outline: none;
-  cursor: pointer;
+.social-icons__item--whatsapp {
+  background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9IiMwREMxNDMiIHJ4PSIyNCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zNC43NTA3IDEzLjIxMTVDMzIuMTc3NyAxMC41NjI4IDI4LjYyMSA5LjEyNSAyNC45ODg1IDkuMTI1QzE3LjI2OTYgOS4xMjUgMTEuMDY0MiAxNS40MDYxIDExLjEzOTkgMjMuMDQ5M0MxMS4xMzk5IDI1LjQ3MDkgMTEuODIxIDI3LjgxNjkgMTIuOTU2MSAyOS45MzU4TDEwLjk4ODUgMzcuMTI1TDE4LjMyOTEgMzUuMjMzMUMyMC4zNzIzIDM2LjM2ODIgMjIuNjQyNiAzNi44OTggMjQuOTEyOCAzNi44OThDMzIuNTU2MSAzNi44OTggMzguNzYxNSAzMC42MTY5IDM4Ljc2MTUgMjIuOTczNkMzOC43NjE1IDE5LjI2NTUgMzcuMzIzNyAxNS43ODQ1IDM0Ljc1MDcgMTMuMjExNVpNMjQuOTg4NSAzNC41NTJDMjIuOTQ1MyAzNC41NTIgMjAuOTAyIDM0LjAyMjMgMTkuMTYxNSAzMi45NjI4TDE4LjcwNzQgMzIuNzM1OEwxNC4zMTgzIDMzLjg3MDlMMTUuNDUzNCAyOS41NTc0TDE1LjE1MDcgMjkuMTAzNEMxMS44MjEgMjMuNzMwNCAxMy40MTAxIDE2LjYxNjkgMTguODU4OCAxMy4yODcyQzI0LjMwNzQgOS45NTc0MyAzMS4zNDUzIDExLjU0NjYgMzQuNjc1IDE2Ljk5NTNDMzguMDA0NyAyMi40NDM5IDM2LjQxNTYgMjkuNDgxOCAzMC45NjY5IDMyLjgxMTVDMjkuMjI2NCAzMy45NDY2IDI3LjEwNzQgMzQuNTUyIDI0Ljk4ODUgMzQuNTUyWk0zMS42NDggMjYuMTUyTDMwLjgxNTYgMjUuNzczNkMzMC44MTU2IDI1Ljc3MzYgMjkuNjA0NyAyNS4yNDM5IDI4Ljg0OCAyNC44NjU1QzI4Ljc3MjMgMjQuODY1NSAyOC42OTY2IDI0Ljc4OTkgMjguNjIxIDI0Ljc4OTlDMjguMzkzOSAyNC43ODk5IDI4LjI0MjYgMjQuODY1NSAyOC4wOTEyIDI0Ljk0MTJDMjguMDkxMiAyNC45NDEyIDI4LjAxNTYgMjUuMDE2OSAyNi45NTYxIDI2LjIyNzdDMjYuODgwNCAyNi4zNzkxIDI2LjcyOTEgMjYuNDU0NyAyNi41Nzc3IDI2LjQ1NDdIMjYuNTAyQzI2LjQyNjQgMjYuNDU0NyAyNi4yNzUgMjYuMzc5MSAyNi4xOTkzIDI2LjMwMzRMMjUuODIxIDI2LjE1MkMyNC45ODg1IDI1Ljc3MzYgMjQuMjMxOCAyNS4zMTk2IDIzLjYyNjQgMjQuNzE0MkMyMy40NzUgMjQuNTYyOCAyMy4yNDggMjQuNDExNSAyMy4wOTY2IDI0LjI2MDFDMjIuNTY2OSAyMy43MzA0IDIyLjAzNzIgMjMuMTI1IDIxLjY1ODggMjIuNDQzOUwyMS41ODMxIDIyLjI5MjZDMjEuNTA3NCAyMi4yMTY5IDIxLjUwNzQgMjIuMTQxMiAyMS40MzE4IDIxLjk4OTlDMjEuNDMxOCAyMS44Mzg1IDIxLjQzMTggMjEuNjg3MiAyMS41MDc0IDIxLjYxMTVDMjEuNTA3NCAyMS42MTE1IDIxLjgxMDEgMjEuMjMzMSAyMi4wMzcyIDIxLjAwNjFDMjIuMTg4NSAyMC44NTQ3IDIyLjI2NDIgMjAuNjI3NyAyMi40MTU2IDIwLjQ3NjRDMjIuNTY2OSAyMC4yNDkzIDIyLjY0MjYgMTkuOTQ2NiAyMi41NjY5IDE5LjcxOTZDMjIuNDkxMiAxOS4zNDEyIDIxLjU4MzEgMTcuMjk4IDIxLjM1NjEgMTYuODQzOUMyMS4yMDQ3IDE2LjYxNjkgMjEuMDUzNCAxNi41NDEyIDIwLjgyNjQgMTYuNDY1NUgyMC41OTkzQzIwLjQ0OCAxNi40NjU1IDIwLjIyMSAxNi40NjU1IDE5Ljk5MzkgMTYuNDY1NUMxOS44NDI2IDE2LjQ2NTUgMTkuNjkxMiAxNi41NDEyIDE5LjUzOTkgMTYuNTQxMkwxOS40NjQyIDE2LjYxNjlDMTkuMzEyOCAxNi42OTI2IDE5LjE2MTUgMTYuODQzOSAxOS4wMTAxIDE2LjkxOTZDMTguODU4OCAxNy4wNzA5IDE4Ljc4MzEgMTcuMjIyMyAxOC42MzE4IDE3LjM3MzZDMTguMTAyIDE4LjA1NDcgMTcuNzk5MyAxOC44ODcyIDE3Ljc5OTMgMTkuNzE5NkMxNy43OTkzIDIwLjMyNSAxNy45NTA3IDIwLjkzMDQgMTguMTc3NyAyMS40NjAxTDE4LjI1MzQgMjEuNjg3MkMxOC45MzQ1IDIzLjEyNSAxOS44NDI2IDI0LjQxMTUgMjEuMDUzNCAyNS41NDY2TDIxLjM1NjEgMjUuODQ5M0MyMS41ODMxIDI2LjA3NjQgMjEuODEwMSAyNi4yMjc3IDIxLjk2MTUgMjYuNDU0N0MyMy41NTA3IDI3LjgxNjkgMjUuMzY2OSAyOC44MDA3IDI3LjQxMDEgMjkuMzMwNEMyNy42MzcyIDI5LjQwNjEgMjcuOTM5OSAyOS40MDYxIDI4LjE2NjkgMjkuNDgxOEMyOC4zOTM5IDI5LjQ4MTggMjguNjk2NiAyOS40ODE4IDI4LjkyMzcgMjkuNDgxOEMyOS4zMDIgMjkuNDgxOCAyOS43NTYxIDI5LjMzMDQgMzAuMDU4OCAyOS4xNzkxQzMwLjI4NTggMjkuMDI3NyAzMC40MzcyIDI5LjAyNzcgMzAuNTg4NSAyOC44NzY0TDMwLjczOTkgMjguNzI1QzMwLjg5MTIgMjguNTczNiAzMS4wNDI2IDI4LjQ5OCAzMS4xOTM5IDI4LjM0NjZDMzEuMzQ1MyAyOC4xOTUzIDMxLjQ5NjYgMjguMDQzOSAzMS41NzIzIDI3Ljg5MjZDMzEuNzIzNyAyNy41ODk5IDMxLjc5OTMgMjcuMjExNSAzMS44NzUgMjYuODMzMUMzMS44NzUgMjYuNjgxOCAzMS44NzUgMjYuNDU0NyAzMS44NzUgMjYuMzAzNEMzMS44NzUgMjYuMzAzNCAzMS43OTkzIDI2LjIyNzcgMzEuNjQ4IDI2LjE1MloiLz48L3N2Zz4=');
+}
+
+.social-icons__item--telegram {
+  background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9IiM0MTlGRDkiIHJ4PSIyNCIvPjxyZWN0IHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIgcng9IjI0Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwLjc4NzQgMjMuNDcwOUMxNy43NjY3IDIwLjM2NjMgMjIuNDIwNiAxOC4zMTk1IDI0Ljc0OTMgMTcuMzMwNUMzMS4zOTc5IDE0LjUwNyAzMi43Nzk1IDE0LjAxNjUgMzMuNjggMTQuMDAwMkMzMy44NzggMTMuOTk2OCAzNC4zMjA4IDE0LjA0NjkgMzQuNjA3NyAxNC4yODQ1QzM0Ljg0OTkgMTQuNDg1MiAzNC45MTY1IDE0Ljc1NjMgMzQuOTQ4NCAxNC45NDY1QzM0Ljk4MDMgMTUuMTM2OCAzNS4wMiAxNS41NzAyIDM0Ljk4ODQgMTUuOTA4OEMzNC42MjgxIDE5Ljc3NCAzMy4wNjkyIDI5LjE1MzkgMzIuMjc2IDMzLjQ4M0MzMS45NDA0IDM1LjMxNDggMzEuMjc5NiAzNS45MjkgMzAuNjM5OSAzNS45ODkxQzI5LjI0OTYgMzYuMTE5NyAyOC4xOTM4IDM1LjA1MSAyNi44NDczIDM0LjE0OTdDMjQuNzQwMSAzMi43Mzk1IDIzLjU0OTggMzEuODYxNSAyMS41MDQ0IDMwLjQ4NTRDMTkuMTQwNyAyOC44OTUgMjAuNjczIDI4LjAyMDkgMjIuMDIwMSAyNi41OTIzQzIyLjM3MjYgMjYuMjE4NSAyOC40OTgzIDIwLjUyOTUgMjguNjE2OSAyMC4wMTM1QzI4LjYzMTcgMTkuOTQ4OSAyOC42NDU1IDE5LjcwODMgMjguNTA1NSAxOS41ODEzQzI4LjM2NTUgMTkuNDU0MyAyOC4xNTg5IDE5LjQ5NzcgMjguMDA5OCAxOS41MzIyQzI3Ljc5ODUgMTkuNTgxMiAyNC40MzIzIDIxLjg1MjkgMTcuOTExMyAyNi4zNDczQzE2Ljk1NTggMjcuMDE3MiAxNi4wOTA0IDI3LjM0MzUgMTUuMzE1IDI3LjMyNjRDMTQuNDYwMiAyNy4zMDc2IDEyLjgxNTkgMjYuODMzIDExLjU5MzUgMjYuNDI3M0MxMC4wOTQyIDI1LjkyOTYgOC45MDI1NCAyNS42NjY2IDkuMDA2MyAyNC44MjE1QzkuMDYwMzUgMjQuMzgxMyA5LjY1NDAzIDIzLjkzMTEgMTAuNzg3NCAyMy40NzA5WiIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhciIgeDE9IjI0IiB4Mj0iMjQiIHkyPSI0Ny42NDQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMkFBQkVFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjI5RUQ5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+');
 }
 </style>

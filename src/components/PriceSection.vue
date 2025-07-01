@@ -171,7 +171,7 @@ const selectedService = computed(() => services[selectedIndex.value])
   width: 100%;
   max-width: 960px;
   border-collapse: collapse;
-  font-family: $base-font;
+
   font-size: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -181,7 +181,7 @@ const selectedService = computed(() => services[selectedIndex.value])
 .price__table thead th {
   border-bottom: 1px solid black;
   background-color: $white;
-  color: $black;
+  color: $gray;
   font-weight: 700;
   padding: 14px 12px;
   text-align: left;
@@ -190,17 +190,17 @@ const selectedService = computed(() => services[selectedIndex.value])
 
 .price__table tbody tr.odd {
   background-color: #fff;
-  color: $black;
+  color: $gray;
 }
 
 .price__table tbody tr.even {
   background-color: $white;
-  color: $black;
+  color: $gray;
 }
 
 .price__table tbody tr:hover {
   background-color: $white;
-  color: $black;
+  color: $gray;
   transition: background-color 0.3s ease;
 }
 
@@ -237,7 +237,7 @@ const selectedService = computed(() => services[selectedIndex.value])
   gap: 10px;
   width: 100%;
   padding: 100px 0;
-  font-family: $base-font;
+
 }
 
 .price__button {
@@ -273,8 +273,8 @@ const selectedService = computed(() => services[selectedIndex.value])
   margin: 0 auto;
   margin-top: 3rem;
   text-align: left;
-  font-family: $base-font;
-  color: $black;
+
+  color: $gray;
   line-height: 1.6;
   max-width: 960px;
   width: 100%; // растягиваем по всей ширине родителя

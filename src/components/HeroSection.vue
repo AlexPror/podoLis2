@@ -12,12 +12,11 @@ import Button from '@/components/Button.vue'
 // }
 
 const scrollToSection = (id: string) => {
-  const el = document.getElementById(id)
-  if (el) el.scrollIntoView({ behavior: 'smooth' })
-}
+  console.log(id);
 
-const openWhatsApp = () => {
-  window.open('https://wa.me/+79533217582', '_blank')
+  const el = document.getElementById(id)
+  console.log(el);
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 </script>
 
@@ -32,9 +31,9 @@ const openWhatsApp = () => {
       <p class="hero-section__address-label">Наш адрес:</p>
       <p class="hero-section__address-text">г. Калуга, ул. Воронина 3, офис 104, первый этаж</p>
       <div class="footer-block block-price">
-        <button class="footer-link" @click="scrollToSection('contact')" aria-label="Прайс услуг">
-          ПРАЙС УСЛУГ
-        </button>
+        <Button @click="scrollToSection('contacts')">
+          Прайс услуг
+        </Button>
       </div>
     </div>
   </section>

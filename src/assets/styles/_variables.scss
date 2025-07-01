@@ -1,12 +1,17 @@
-// colors
-$white: #f3ede9;
-$black: #5b5b5b;
+// Colors
+$white: #fff;
+$black: #000;
+$linen: #f3ede9;
+$gray: #5b5b5b;
 $primary-color: #ff5e00;
 
 // Fonts
-$base-font: 'Futura PT';
-$headings-font: 'Jost';
+$base-font: Montserrat; // 'Futura PT';
+$headings-font: inherit; // 'Jost';
 // $base-font: 'Montserrat', sans-serif;
 
 // Transitions
 $transition-base: 0.15s ease-in-out;
+
+// Links
+$link-color: $primary-color;
