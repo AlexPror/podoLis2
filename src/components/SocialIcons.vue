@@ -8,14 +8,16 @@
       target="_blank"
       rel="noopener"
       class="social-icons__item social-icons__item--whatsapp"
-    />
+    >
+    </a>
     <a
       href="https://t.me/podolispodo"
       aria-label="Перейти в Telegram группу"
       target="_blank"
       rel="noopener"
       class="social-icons__item social-icons__item--telegram"
-    />
+    >
+    </a>
   </div>
 </template>
 
@@ -27,13 +29,12 @@
 
 .social-icons__item {
   background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
   height: 2rem;
-  height: auto;
+  display: block;
   max-width: 100%;
-  transition: .15s ease-in-out;
+  transition: 0.15s ease-in-out;
   width: 2rem;
+  background-size: contain;
 
   &:hover {
     opacity: 0.6;

@@ -45,7 +45,7 @@ const scrollToSection = (id: string) => {
       <div class="footer-block block-reviews">
         <h3 class="footer-title">ОТЗЫВЫ О НАШЕЙ РАБОТЕ</h3>
         <p class="reviews-text">
-          Честные отзывы о нашей работе Вы можете прочитать на Google, Yandex или 2GIS картах
+          Честные отзывы о нашей работе Вы можете прочитать на Yandex или 2GIS картах
         </p>
       </div>
     </Container>
@@ -102,7 +102,6 @@ const scrollToSection = (id: string) => {
 }
 
 .footer-link {
-
   background: none;
   border: none;
   padding: 0;

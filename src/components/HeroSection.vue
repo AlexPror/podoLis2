@@ -31,9 +31,9 @@ const scrollToSection = (id: string) => {
       <p class="hero-section__address-label">Наш адрес:</p>
       <p class="hero-section__address-text">г. Калуга, ул. Воронина 3, офис 104, первый этаж</p>
       <div class="footer-block block-price">
-        <button class="footer-link" @click="scrollToSection('contacts')" aria-label="Прайс услуг">
-          ПРАЙС УСЛУГ
-        </button>
+        <Button class="footer-link" @click="scrollToSection('contacts')" aria-label="Контакты">
+          Контакты
+        </Button>
       </div>
     </div>
   </section>
