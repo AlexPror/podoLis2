@@ -2,7 +2,7 @@
 
 <template>
   <div class="logo">
-    <img class="logo__img" src="../assets/images/logo2.svg" alt="" />
+    <img class="logo__img" src="../assets/images/logo.svg" alt="" />
   </div>
 </template>
 

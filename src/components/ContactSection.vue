@@ -40,27 +40,36 @@ const openWhatsApp = () => {
 </template>
 
 <style scoped lang="scss">
+#contacts {
+  position: relative;
+  padding-top: 80px; /* Отступ сверху равен высоте футера */
+  margin-top: -80px; /* Отрицательный внешний отступ компенсирует padding */
+  scroll-margin-top: 80px; /* Отступ при скролле (для современных браузеров) */
+}
+
 .contacts {
-  align-items: center;
-  color: #333;
   display: flex;
   flex-wrap: wrap;
-  font-size: 20px;
   justify-content: center;
-  padding: 75px 0 60px;
+  align-items: flex-start; // лучше выравнивание по верхнему краю для секций разной высоты
+  color: #333;
+  font-size: 20px;
+  padding: 60px 0; // убрал верхний 75px, сделал симметрично сверху и снизу
 
   &__info {
     flex: 1 1 300px;
+    padding: 0 20px 40px; // внутренние отступы справа и слева, снизу — чтобы отделить от карты
+    box-sizing: border-box;
   }
 
   &__title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 24px; // чуть больше для визуального разделения
   }
 
   &__phones {
-    margin-bottom: 15px;
+    margin-bottom: 20px; // увеличил для более комфортного чтения
   }
 
   &__label {
@@ -88,17 +97,17 @@ const openWhatsApp = () => {
   }
 
   &__worktime {
-    margin-bottom: 15px;
+    margin-bottom: 20px; // увеличил для единообразия
   }
 
   &__whatsapp {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     &-link {
       background-color: #f0f0f0;
       border-radius: 6px;
+      padding: 6px 12px; // чуть больше, чтобы кнопка была удобнее
       box-shadow: none;
-      padding: 5px 10px;
       transition:
         background-color 0.3s ease,
         color 0.3s ease;
@@ -111,35 +120,42 @@ const openWhatsApp = () => {
   }
 
   &__address {
-    margin-bottom: 15px;
+    margin-bottom: 20px; // единообразный отступ
   }
 
   &__map {
-    border-radius: 8px;
     flex: 1 1 280px;
     height: 571px;
-    max-height: 571px;
-    min-height: 571px;
+    border-radius: 8px;
     overflow: hidden;
+    margin: 0 20px 40px; // добавил внешние отступы справа, слева и снизу
+    box-sizing: border-box;
   }
 
   &__iframe {
+    width: 100%;
+    height: 100%;
     border: none;
     display: block;
-    height: 100%;
-    width: 100%;
   }
 }
 
 /* Адаптив */
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .contacts {
     flex-direction: column;
+    padding: 40px 0; // чуть меньше отступы сверху/снизу на мобильных
+  }
+
+  .contacts__info,
+  .contacts__map {
+    flex: 1 1 100%;
+    margin: 0 0 30px; // отступ снизу для разделения блоков
+    padding: 0 15px; // внутренние отступы по бокам для мобильных
   }
 
   .contacts__map {
-    min-height: 250px;
-    width: 100%;
+    height: 250px;
   }
 }
 </style>

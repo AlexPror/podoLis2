@@ -65,40 +65,34 @@ const scrollToSection = (id: string) => {
   background-color: $white;
   color: $gray;
   font-size: 14px;
-  padding: 40px 20px 20px;
+  padding: 40px 20px 30px; // увеличил нижний паддинг для баланса с footer-bottom
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px; // добавил промежутки между блоками
+  flex-wrap: wrap; // чтобы на узких экранах блоки переносились
+  justify-content: center;
 }
 
 .footer-block {
-  display: flex;
   flex: 1 1 220px;
+  display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px; // немного увеличил для читаемости
   min-width: 220px;
+  margin-bottom: 0; // убрал, чтобы отступы были через gap
 }
 
 .block-info {
-  // max-width: 300px;
-}
-
-// .footer-logo {
-//   width: 100%;
-//   height: auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-start;
-// }
-
-.logo-icon svg,
-.whatsapp-icon svg {
-  display: block;
-  fill: none;
-  stroke: #eee;
+  max-width: 320px; // ограничил ширину для читаемости текста
 }
 
 .info-text {
   color: $gray;
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.5; // чуть больше межстрочного интервала для удобства чтения
+  margin: 0; // убрал лишние отступы
 }
 
 .footer-link {
@@ -112,6 +106,7 @@ const scrollToSection = (id: string) => {
   text-align: left;
   text-transform: uppercase;
   transition: color 0.3s ease;
+  margin: 0; // убрать лишние отступы
 }
 
 .footer-link:hover,
@@ -123,14 +118,15 @@ const scrollToSection = (id: string) => {
 .footer-title {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin: 0 0 12px; // увеличил нижний отступ для отделения от текста
   text-transform: uppercase;
 }
 
 .reviews-text {
   color: $gray;
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .footer-bottom {
@@ -139,15 +135,17 @@ const scrollToSection = (id: string) => {
   font-size: 12px;
   gap: 20px;
   justify-content: center;
-  margin: 0 auto;
+  margin: 30px auto 0; // добавил верхний margin для отделения от основного футера
   max-width: 1200px;
   padding-top: 15px;
+  flex-wrap: wrap; // чтобы ссылки переносились на маленьких экранах
 }
 
 .footer-policy-link {
   color: #888;
   text-decoration: underline;
   transition: color 0.3s ease;
+  white-space: nowrap; // чтобы ссылки не переносились посередине
 }
 
 .footer-policy-link:hover,
@@ -157,10 +155,10 @@ const scrollToSection = (id: string) => {
 }
 
 /* Адаптив */
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px; // чуть меньше, чем на десктопе
   }
 
   .footer-block {
@@ -171,6 +169,7 @@ const scrollToSection = (id: string) => {
     flex-direction: column;
     font-size: 13px;
     gap: 10px;
+    margin-top: 20px;
   }
 }
 </style>
