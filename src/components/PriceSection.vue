@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import Container from './Container.vue'
+import Section from './Section.vue'
 
 const services = [
   {
@@ -75,7 +76,7 @@ const selectedService = computed(() => services[selectedIndex.value])
 </script>
 
 <template>
-  <section id="price" class="price">
+  <Section id="price" class="price" is-gray>
     <Container>
       <div class="price__buttons">
         <button
@@ -151,7 +152,7 @@ const selectedService = computed(() => services[selectedIndex.value])
         </ol>
       </div>
     </Container>
-  </section>
+  </Section>
 </template>
 
 <style scope lang="scss">
@@ -234,7 +235,7 @@ const selectedService = computed(() => services[selectedIndex.value])
 .price__buttons {
   display: flex;
   gap: 10px;
-  padding: 100px 0;
+  margin-bottom: 3rem;
   width: 100%;
 
 }

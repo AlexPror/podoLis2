@@ -2,11 +2,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
   font-weight: normal;
+  margin: 0;
 }
 
 body {
+  color: #333;
   font-family: $base-font, sans-serif;
   line-height: 1.5;
   margin: 0;

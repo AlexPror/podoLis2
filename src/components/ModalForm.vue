@@ -104,7 +104,8 @@ const submitForm = () => {
 
 <template>
   <teleport to="body">
-    <div v-if="isModalOpen" class="modal-overlay" @click.self="closeModal">
+    <div v-if="isModalOpen" class="modal-wrapper">
+      <div class="modal-overlay" @click="closeModal" />
       <div class="modal">
         <button class="modal-close" @click="closeModal" aria-label="Закрыть">&times;</button>
         <h3>Оставьте заявку на консультацию</h3>
@@ -136,15 +137,20 @@ const submitForm = () => {
 </template>
 
 <style scoped>
-.modal-overlay {
+.modal-wrapper {
   align-items: center;
-  background: rgb(0 0 0 / 50%);
   display: flex;
   inset: 0;
   justify-content: center;
   padding: 20px;
   position: fixed;
-  z-index: 9999;
+  z-index: 100;
+}
+
+.modal-overlay {
+  background: rgb(0 0 0 / 50%);
+  inset: 0;
+  position: fixed;
 }
 
 .modal {

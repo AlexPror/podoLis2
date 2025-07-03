@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import ModalForm from './ModalForm.vue'
 import Button from './Button.vue'
 import Container from './Container.vue'
+import Section from './Section.vue'
 
 const isModalOpen = ref(false)
 
@@ -16,7 +17,7 @@ const closeModal = () => {
 </script>
 
 <template>
-  <section id="problems" class="problems-section">
+  <Section id="problems" class="problems-section">
     <Container>
       <h2 class="title">С какими проблемами мы работаем</h2>
       <p class="subtitle">
@@ -85,13 +86,15 @@ const closeModal = () => {
         </article>
       </div>
 
-      <div class="all-services-wrapper">
-        <a href="#price" class="btn-orange all-services-button">Все услуги</a>
+      <div class="all-services-wrapper mt-5">
+        <!-- <a href="#price" class="btn-orange all-services-button">Все услуги</a> -->
+
+        <Button size="large" to="#price">Все услуги</Button>
       </div>
 
       <ModalForm :isModalOpen="isModalOpen" @close="closeModal" />
     </Container>
-  </section>
+  </Section>
 </template>
 
 <style scoped lang="scss">
@@ -153,7 +156,7 @@ const closeModal = () => {
 }
 
 .problems-section .card-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 15px;
 }

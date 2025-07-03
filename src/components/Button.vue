@@ -57,21 +57,32 @@ const onClick = (event: MouseEvent) => {
 .button {
   background-color: $primary-color;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 0 #9b400b;
   color: $white;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 500;
   letter-spacing: 1px;
   outline: none;
-  padding: 0.85rem 1.5rem;
+  padding: 1rem 1.3rem 0.9rem;
   text-transform: uppercase;
   transition: $transition-base;
   white-space: nowrap;
 
+  &:hover {
+    box-shadow: 0 5px 0 transparent;
+    transform: translateY(-5px);
+  }
+
   &--small {
+    box-shadow: 0 2px 0 #9b400b;
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 
   &--large {
@@ -84,11 +95,8 @@ const onClick = (event: MouseEvent) => {
   }
 
   &--secondary {
-    background-color: #918b8b; /* серый цвет для secondary */
-  }
-
-  &:hover {
-    opacity: 0.8;
+    background-color: #918b8b;
+    box-shadow: 0 5px 0 #5c5858;
   }
 }
 </style>

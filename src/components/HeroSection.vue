@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import backgroundHeroSection from '@/assets/images/backgroundHeroSection.jpg'
 import Button from '@/components/Button.vue'
+import Container from './Container.vue'
 
 // const scrollToContact = () => {
 //   console.log('привет')
@@ -22,26 +23,37 @@ const scrollToSection = (id: string) => {
 
 <template>
   <section class="hero-section" id="hero">
-    <div
-      class="hero-section__background"
-      :style="{ backgroundImage: `url(${backgroundHeroSection})` }"
-    ></div>
-    <div class="hero-section__overlay"></div>
-    <div class="hero-section__content">
-      <p class="hero-section__address-label">Наш адрес:</p>
-      <p class="hero-section__address-text">г. Калуга, ул. Воронина 3, офис 104, первый этаж</p>
-      <div class="footer-block block-price">
-        <Button class="footer-link" @click="scrollToSection('contacts')" aria-label="Контакты">
-          Контакты
-        </Button>
+    <Container>
+      <div
+        class="hero-section__background"
+        :style="{ backgroundImage: `url(${backgroundHeroSection})` }"
+      ></div>
+      <slot />
+      <div class="hero-section__overlay"></div>
+      <div class="hero-section__content">
+        <h1 class="hero-section__title">
+          Здоровье ваших ног — наша забота
+        </h1>
+        <div class="hero-section__descr">
+          Многолетний опыт и искренняя забота для ваших ног
+        </div>
+        <div class="footer-block block-price">
+          <Button class="footer-link" @click="scrollToSection('contacts')">
+            Узнать о нас больше
+          </Button>
+        </div>
       </div>
-    </div>
+    </Container>
   </section>
 </template>
 
 <style scoped lang="scss">
 .hero-section {
+  color: $white;
+  display: flex;
+  flex-direction: column;
   height: 90vh;
+  justify-content: center;
   overflow: hidden;
   position: relative;
   user-select: none;
@@ -56,47 +68,15 @@ const scrollToSection = (id: string) => {
   }
 
   &__overlay {
-    background-color: rgb(0 0 0 / 40%);
+    background-color: rgba(#3f3834, 70%);
     inset: 0;
     pointer-events: none;
     position: absolute;
-    z-index: 1;
   }
 
   &__content {
-    align-items: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    font-weight: 500;
-    gap: 25px;
-    left: 50%;
-    line-height: 1.4;
-    position: absolute;
-    text-align: center;
-    text-shadow: 0 0 6px rgb(0 0 0 / 70%);
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-
-    @media (width <= 768px) {
-      font-size: 16px;
-      gap: 16px;
-      max-width: 350px;
-      padding: 0 15px;
-      width: 90%;
-    }
-
-    @media (width <= 400px) {
-      font-size: 14px;
-      gap: 12px;
-    }
-  }
-
-  &__address-label,
-  &__address-text {
-    margin: 0;
+    position: relative;
+    z-index: 2;
   }
 
   // &__button {
@@ -131,5 +111,10 @@ const scrollToSection = (id: string) => {
   //     padding: 8px 20px;
   //   }
   // }
+}
+
+.hero-section__descr {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 </style>

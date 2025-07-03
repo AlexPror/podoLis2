@@ -73,49 +73,48 @@ const scrollToSection = (id: string) => {
 
 <style scoped lang="scss">
 .about-section {
+  box-sizing: border-box;
   height: 100vh;
   overflow: hidden;
   position: relative;
   user-select: none;
-  box-sizing: border-box;
 
   &__background {
-    position: absolute;
-    inset: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    inset: 0;
+    position: absolute;
     z-index: 0;
   }
 
   &__overlay {
-    position: absolute;
+    background-color: rgb(0 0 0 / 40%);
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
+    position: absolute;
     z-index: 1;
   }
 
   &__content {
-    position: absolute;
-    top: 50%;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 25px;
     left: 50%;
+    line-height: 1.4;
+    max-width: 600px;
+    padding: 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
-    gap: 25px;
-    padding: 0 20px;
-    max-width: 600px;
-
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       font-size: 16px;
       gap: 16px;
       max-width: 350px;
@@ -123,7 +122,7 @@ const scrollToSection = (id: string) => {
       width: 90%;
     }
 
-    @media (max-width: 400px) {
+    @media (width <= 400px) {
       font-size: 14px;
       gap: 12px;
     }
@@ -134,34 +133,34 @@ const scrollToSection = (id: string) => {
   // }
 
   &__title {
+    color: white;
     font-size: 28px;
     font-weight: 700;
-    color: white;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
     margin-bottom: 50px;
+    text-shadow: 0 0 8px rgb(0 0 0 / 70%);
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       font-size: 22px;
     }
 
-    @media (max-width: 400px) {
+    @media (width <= 400px) {
       font-size: 18px;
     }
   }
 
   &__address-label,
   &__address-text {
-    margin: 0;
-    font-size: 14px;
     color: white;
+    font-size: 14px;
+    margin: 0;
   }
 }
 
 .specialisation {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
   color: #333;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
   text-align: left;
 
   &__title {
@@ -187,7 +186,7 @@ const scrollToSection = (id: string) => {
     font-weight: 700;
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     max-width: 100%;
     padding: 0 15px;
 
