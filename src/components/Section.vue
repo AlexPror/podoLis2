@@ -1,36 +1,41 @@
-<template>
-  <section
-    :class="sectionClasses"
-  >
-    <slot />
-  </section>
-</template>
-
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 
-// Используем defineProps для получения пропсов
+// Получаем пропсы
 const props = defineProps<{
-  isGray?: boolean;
-}>();
+  isGray?: boolean
+  noPaddingBottom?: boolean
+}>()
 
-// Вычисляем класс секции для цвета фона
-const sectionClasses = computed(() => ([
+// Вычисляем классы секции
+const sectionClasses = computed(() => [
   'section',
   {
     'bg-gray': props.isGray,
     'bg-white': !props.isGray,
-  }
-]));
+    'no-padding-bottom': props.noPaddingBottom,
+  },
+])
 </script>
+
+<template>
+  <section :class="sectionClasses">
+    <slot />
+  </section>
+</template>
 
 <style lang="scss" scoped>
 .section {
-  padding-bottom: 7rem;
-  padding-top: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .bg-gray {
   background-color: #eee;
+}
+
+/* Класс для отключения нижнего паддинга */
+.no-padding-bottom {
+  padding-bottom: 0 !important;
 }
 </style>

@@ -40,7 +40,7 @@ const closeModal = () => {
             </ul>
           </div>
           <div class="card-buttons">
-            <Button theme="secondary" size="small" to="/problems/fungus">Подробнее</Button>
+            <!-- <Button theme="secondary" size="small" to="/problems/fungus">Подробнее</Button> -->
             <Button theme="primary" size="small" @click="openModal">Решить проблему</Button>
           </div>
         </article>
@@ -60,7 +60,7 @@ const closeModal = () => {
             </ul>
           </div>
           <div class="card-buttons">
-            <Button theme="secondary" size="small">Подробнее</Button>
+            <!-- <Button theme="secondary" size="small">Подробнее</Button> -->
             <Button theme="primary" size="small" @click="openModal">Решить проблему</Button>
           </div>
         </article>
@@ -80,7 +80,7 @@ const closeModal = () => {
             </ul>
           </div>
           <div class="card-buttons">
-            <Button theme="secondary" size="small" to="/problems/cracks">Подробнее</Button>
+            <!-- <Button theme="secondary" size="small" to="/problems/cracks">Подробнее</Button> -->
             <Button theme="primary" size="small" @click="openModal">Решить проблему</Button>
           </div>
         </article>
@@ -99,9 +99,7 @@ const closeModal = () => {
 
 <style scoped lang="scss">
 .problems-section {
-  // max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px;
   text-align: center;
 }
 
@@ -122,6 +120,7 @@ const closeModal = () => {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .problems-section .card {

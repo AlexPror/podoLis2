@@ -237,18 +237,17 @@ const selectedService = computed(() => services[selectedIndex.value])
   gap: 10px;
   margin-bottom: 3rem;
   width: 100%;
-
 }
 
 .price__button {
   background: $white;
   border: none;
-  border-radius: 6px;
+  border-radius: 2rem;
   cursor: pointer;
   flex: 1 1 0;
   font-size: 20px;
   font-weight: 600;
-  padding: 14px 0;
+  padding: 10px;
   text-align: center;
   transition:
     background-color 0.3s ease,

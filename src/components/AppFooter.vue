@@ -3,99 +3,116 @@ import { ref } from 'vue'
 import AppLogo from './AppLogo.vue'
 import Container from './Container.vue'
 import SocialIcons from './SocialIcons.vue'
+import Section from './Section.vue'
 
-// Функция скролла к элементу по id
 const scrollToSection = (id: string) => {
   const el = document.getElementById(id)
-  if (el) el.scrollIntoView({ behavior: 'smooth' })
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+    el.focus({ preventScroll: true })
+  }
 }
 </script>
 
 <template>
-  <footer class="footer-section">
-    <Container class="footer-container">
-      <!-- Первый блок -->
-      <div class="footer-block block-info">
-        <div class="footer-logo">
-          <AppLogo />
+  <footer class="footer">
+    <Section is-gray :noPaddingBottom="true">
+      <Container class="footer__container">
+        <div class="footer__block footer__block--info">
+          <div class="footer__logo">
+            <AppLogo />
+          </div>
+          <SocialIcons class="footer__social-icons" />
         </div>
-        <SocialIcons />
-        <p class="info-text">
+
+        <div class="footer__block footer__block--price">
+          <RouterLink :to="{ path: '/', hash: '#price' }" class="footer__link">
+            Прайс услуг
+          </RouterLink>
+        </div>
+
+        <div class="footer__block footer__block--about">
+          <RouterLink to="/about" class="footer__link">О нас</RouterLink>
+        </div>
+
+        <div class="footer__block footer__block--reviews">
+          <h3 class="footer__title">ОТЗЫВЫ О НАШЕЙ РАБОТЕ</h3>
+          <p class="footer__reviews-text">
+            Честные отзывы о нашей работе Вы можете прочитать на
+            <a
+              href="https://yandex.ru/maps/org/podolis/162946540799/?ll=36.260784%2C54.519887&z=16"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link--external"
+              >Yandex</a
+            >
+            или
+            <a
+              href="https://2gis.ru/kaluga/firm/70000001102210712"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link--external"
+              >2GIS</a
+            >
+            картах
+          </p>
+        </div>
+
+        <p class="footer__info-text">
           Материалы, размещенные на данной странице, носят информационный характер и предназначены
           для ознакомительных целей. Информация, размещенная на сайте, не является публичной
           офертой. Актуальную информацию о ценах, акциях и предложениях уточняйте по телефону.
         </p>
-      </div>
+      </Container>
 
-      <!-- Второй блок -->
-      <div class="footer-block block-price">
-        <button class="footer-link" @click="scrollToSection('price')" aria-label="Прайс услуг">
-          ПРАЙС УСЛУГ
-        </button>
+      <div class="footer__bottom">
+        <a href="/privacy-policy" target="_blank" rel="noopener" class="footer__policy-link">
+          Политика конфиденциальности
+        </a>
+        <a href="/cookies-policy" target="_blank" rel="noopener" class="footer__policy-link">
+          Политика использования cookies
+        </a>
       </div>
-
-      <!-- Третий блок -->
-      <div class="footer-block block-about">
-        <button class="footer-link" @click="scrollToSection('about')" aria-label="О нас">
-          О НАС
-        </button>
-      </div>
-
-      <!-- Четвёртый блок -->
-      <div class="footer-block block-reviews">
-        <h3 class="footer-title">ОТЗЫВЫ О НАШЕЙ РАБОТЕ</h3>
-        <p class="reviews-text">
-          Честные отзывы о нашей работе Вы можете прочитать на Yandex или 2GIS картах
-        </p>
-      </div>
-    </Container>
-    <div class="footer-bottom">
-      <a href="/privacy-policy" target="_blank" rel="noopener" class="footer-policy-link">
-        Политика конфиденциальности
-      </a>
-      <a href="/cookies-policy" target="_blank" rel="noopener" class="footer-policy-link">
-        Политика использования cookies
-      </a>
-    </div>
+    </Section>
   </footer>
 </template>
 
 <style scoped lang="scss">
-.footer-section {
+.footer {
   background-color: $white;
   color: $gray;
   font-size: 14px;
-  padding: 40px 20px 30px; // увеличил нижний паддинг для баланса с footer-bottom
 }
 
-.footer-container {
+.footer__container {
   display: flex;
-  gap: 40px; // добавил промежутки между блоками
-  flex-wrap: wrap; // чтобы на узких экранах блоки переносились
+  gap: 40px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.footer-block {
+.footer__block {
   flex: 1 1 220px;
   display: flex;
   flex-direction: column;
-  gap: 16px; // немного увеличил для читаемости
+  gap: 16px;
   min-width: 220px;
-  margin-bottom: 0; // убрал, чтобы отступы были через gap
+  margin-bottom: 0;
 }
 
-.block-info {
-  max-width: 320px; // ограничил ширину для читаемости текста
+.footer__block--info {
+  max-width: 320px;
 }
 
-.info-text {
-  color: $gray;
-  font-size: 13px;
-  line-height: 1.5; // чуть больше межстрочного интервала для удобства чтения
-  margin: 0; // убрал лишние отступы
+.footer__block--price,
+.footer__block--about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
-.footer-link {
+.footer__link {
   background: none;
   border: none;
   color: $gray;
@@ -106,66 +123,88 @@ const scrollToSection = (id: string) => {
   text-align: left;
   text-transform: uppercase;
   transition: color 0.3s ease;
-  margin: 0; // убрать лишние отступы
+  margin: 0;
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover,
+.footer__link:focus {
   color: #f60;
   outline: none;
 }
 
-.footer-title {
+.footer__link--external {
+  border-bottom: 1px solid $link-color;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: $transition-base;
+}
+
+.footer__link--external:hover,
+.footer__link--external:focus {
+  color: #f60;
+  outline: none;
+}
+
+.footer__title {
   font-size: 20px;
   font-weight: 700;
-  margin: 0 0 12px; // увеличил нижний отступ для отделения от текста
+  margin: 0 0 12px;
   text-transform: uppercase;
 }
 
-.reviews-text {
+.footer__reviews-text {
   color: $gray;
   font-size: 13px;
   line-height: 1.5;
   margin: 0;
 }
 
-.footer-bottom {
+.footer__info-text {
+  color: $gray;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer__bottom {
   border-top: 1px solid #444;
   display: flex;
   font-size: 12px;
   gap: 20px;
   justify-content: center;
-  margin: 30px auto 0; // добавил верхний margin для отделения от основного футера
+  margin: 30px auto 0;
   max-width: 1200px;
   padding-top: 15px;
-  flex-wrap: wrap; // чтобы ссылки переносились на маленьких экранах
+  flex-wrap: wrap;
 }
 
-.footer-policy-link {
+.footer__policy-link {
   color: #888;
   text-decoration: underline;
   transition: color 0.3s ease;
-  white-space: nowrap; // чтобы ссылки не переносились посередине
+  white-space: nowrap;
 }
 
-.footer-policy-link:hover,
-.footer-policy-link:focus {
+.footer__policy-link:hover,
+.footer__policy-link:focus {
   color: #f60;
   outline: none;
 }
 
 /* Адаптив */
 @media (max-width: 768px) {
-  .footer-container {
+  .footer__container {
     flex-direction: column;
-    gap: 30px; // чуть меньше, чем на десктопе
+    gap: 30px;
   }
 
-  .footer-block {
+  .footer__block {
     min-width: 100%;
   }
 
-  .footer-bottom {
+  .footer__bottom {
     flex-direction: column;
     font-size: 13px;
     gap: 10px;

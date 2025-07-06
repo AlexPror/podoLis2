@@ -3,8 +3,7 @@ const links = [
   { name: 'Главная', href: '/' },
   { name: 'О нас', href: '/about' },
   { name: 'Прайс услуг', href: '/#price' },
-  { name: 'Контакты', href: '#contacts' },
-  { name: 'Мда-страница', href: '/mda' },
+  { name: 'Контакты', href: '/#contacts' },
 ]
 </script>
 

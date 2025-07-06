@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, reactive } from 'vue'
+import { defineProps, defineEmits, reactive } from 'vue'
 import Button from '@/components/Button.vue'
 
 const props = defineProps({
@@ -21,18 +21,14 @@ const errors = reactive({
   consent: '',
 })
 
-// Функция валидации номера телефона (только цифры и длина 11)
 function validatePhoneNumber(phone: string): boolean {
   const digitsOnly = phone.replace(/\D/g, '')
   return digitsOnly.length === 11
 }
 
-// Обработчик ввода с маской +7 (xxx) xxx-xx-xx
 const onPhoneInput = (event: Event) => {
   let input = (event.target as HTMLInputElement).value
-  // Убираем всё, кроме цифр
   input = input.replace(/\D/g, '')
-  // Ограничиваем длину 11 цифр (например, +7 и 10 цифр)
   if (input.length > 11) input = input.slice(0, 11)
 
   let formatted = '+7 '
@@ -93,12 +89,10 @@ const closeModal = () => {
 }
 
 const submitForm = () => {
-  if (!validate()) return // Если валидация не прошла, просто выходим и НЕ закрываем модалку
-
-  // ... здесь отправка данных, если нужно
+  if (!validate()) return
 
   alert('Заявка отправлена!')
-  closeModal() // Закрываем только если всё валидно
+  closeModal()
 }
 </script>
 
@@ -106,10 +100,18 @@ const submitForm = () => {
   <teleport to="body">
     <div v-if="isModalOpen" class="modal-wrapper">
       <div class="modal-overlay" @click="closeModal" />
-      <div class="modal">
-        <button class="modal-close" @click="closeModal" aria-label="Закрыть">&times;</button>
-        <h3>Оставьте заявку на консультацию</h3>
-        <form @submit.prevent="submitForm" class="modal-form">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button
+          class="modal-close"
+          @click="closeModal"
+          aria-label="Закрыть"
+          tabindex="0"
+          role="button"
+        >
+          &times;
+        </button>
+        <h3 id="modal-title">Оставьте заявку на консультацию</h3>
+        <form @submit.prevent="submitForm" class="modal-form" novalidate>
           <label>
             Ваше имя
             <input type="text" v-model="formData.name" />
@@ -117,7 +119,12 @@ const submitForm = () => {
           </label>
           <label>
             Ваш телефон с мессенджером
-            <input type="tel" v-model="formData.phone" placeholder="+7 (___) ___-__-__" />
+            <input
+              type="tel"
+              v-model="formData.phone"
+              placeholder="+7 (___) ___-__-__"
+              @input="onPhoneInput"
+            />
             <span v-if="errors.phone" class="error-message">{{ errors.phone }}</span>
           </label>
           <label>
@@ -142,13 +149,13 @@ const submitForm = () => {
   display: flex;
   inset: 0;
   justify-content: center;
-  padding: 20px;
   position: fixed;
+  padding: 20px;
   z-index: 100;
 }
 
 .modal-overlay {
-  background: rgb(0 0 0 / 50%);
+  background: rgba(0, 0, 0, 0.5);
   inset: 0;
   position: fixed;
 }
@@ -156,7 +163,7 @@ const submitForm = () => {
 .modal {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgb(0 0 0 / 20%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   padding: 30px 25px;
   position: relative;

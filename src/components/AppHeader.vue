@@ -59,37 +59,4 @@ import SocialIcons from './SocialIcons.vue'
   flex-direction: column;
   gap: 4px;
 }
-
-// Action Button
-// .header__button {
-//   padding: 8px 16px;
-//   background-color: $primary-color;
-//   border: none;
-//   color: white;
-//   cursor: pointer;
-//   border-radius: 4px;
-//   font-weight: 600;
-//   transition: $transition-base;
-
-//   &:hover {
-//     background-color: #d94a1a;
-//   }
-// }
-
-// .header__phone-button {
-//   background-color: $primary-color;
-//   border: none;
-//   border-radius: 6px;
-//   padding: 8px 16px;
-//   font-weight: 600;
-//   font-size: 16px;
-//   color: white;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease;
-//   user-select: none;
-
-//   &:hover {
-//     background-color: #d94a1a;
-//   }
-// }
 </style>

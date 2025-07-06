@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Container from './Container.vue'
-import Section from './Section.vue';
+import Section from './Section.vue'
 
 const openWhatsApp = () => {
   window.open('https://wa.me/79533217582', '_blank')
@@ -10,7 +10,7 @@ const openWhatsApp = () => {
 <template>
   <Section>
     <Container>
-      <section id="contacts" class="contacts">
+      <section id="contacts" class="contacts" tabindex="-1">
         <div class="contacts__info">
           <h3 class="contacts__title">Наши контакты</h3>
           <div class="contacts__phones">
@@ -21,6 +21,7 @@ const openWhatsApp = () => {
             <a href="tel:+79141726408" class="contacts__phone-link">+7 914 172-64-08</a>
           </div>
           <div class="contacts__worktime">Мы работаем ежедневно с 9 до 20 часов</div>
+          <div class="contacts__worktime">По предварительной записи</div>
           <div class="contacts__whatsapp">
             Ссылка для записи через
             <a href="#" class="contacts__whatsapp-link" @click.prevent="openWhatsApp">WhatsApp</a>
@@ -43,13 +44,6 @@ const openWhatsApp = () => {
 </template>
 
 <style scoped lang="scss">
-#contacts {
-  margin-top: -80px; /* Отрицательный внешний отступ компенсирует padding */
-  padding-top: 80px; /* Отступ сверху равен высоте футера */
-  position: relative;
-  scroll-margin-top: 80px; /* Отступ при скролле (для современных браузеров) */
-}
-
 .contacts {
   align-items: flex-start; // лучше выравнивание по верхнему краю для секций разной высоты
   color: #333;
@@ -57,7 +51,6 @@ const openWhatsApp = () => {
   flex-wrap: wrap;
   font-size: 20px;
   justify-content: center;
-  padding: 60px 0; // убрал верхний 75px, сделал симметрично сверху и снизу
 
   &__info {
     box-sizing: border-box;
