@@ -8,7 +8,8 @@
 .container {
   margin: 0 auto;
   max-width: 1680px;
-  padding: 0 20px;
+  padding: 0 1rem;
+  width: 100%;
 }
 
 .footer-container {

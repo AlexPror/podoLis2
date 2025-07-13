@@ -9,5 +9,9 @@
 <style lang="scss" scoped>
 .logo {
   max-width: 300px;
+
+  @media (width <= 1366px) {
+    max-width: 200px;
+  }
 }
 </style>
