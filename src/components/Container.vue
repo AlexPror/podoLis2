@@ -7,8 +7,8 @@
 <style scoped lang="scss">
 .container {
   margin: 0 auto;
-  max-width: 1680px;
-  padding: 0 20px;
+  max-width: 100%;
+  padding: 0 1rem;
 }
 
 .footer-container {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import backgroundHeroSection from '@/assets/images/alisa-top-master.jpg'
+import backgroundHeroSection from '@/assets/images/hero-bg.jpg'
 import Button from '@/components/Button.vue'
 import Container from './Container.vue'
 
@@ -52,7 +52,7 @@ const goToAbout = () => {
 }
 
 .hero-section__background {
-  background-position: right center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
   inset: 0;
