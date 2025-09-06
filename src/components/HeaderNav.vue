@@ -23,6 +23,10 @@ const links = [
   margin: 0;
   padding: 0;
 
+  @media (width <= 1140px) {
+    gap: 1rem;
+  }
+
   @media (width <= 768px) {
     background-color: #000c;
     flex-direction: column;
@@ -43,6 +47,7 @@ const links = [
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: $transition-base;
+  white-space: nowrap;
 
   @media (width <= 768px) {
     border-bottom: 1px solid rgb(255 255 255 / 10%);

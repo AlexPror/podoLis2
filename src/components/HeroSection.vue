@@ -23,11 +23,10 @@ const goToAbout = () => {
   <section class="hero-section" id="hero">
     <Container>
       <div
-        class="hero-section__background"
+        class="hero-section__bg"
         :style="{ backgroundImage: `url(${backgroundHeroSection})` }"
       ></div>
       <slot />
-      <div class="hero-section__overlay"></div>
       <div class="hero-section__content">
         <h1 class="hero-section__title">Здоровье ваших ног — наша забота</h1>
         <div class="hero-section__descr">Многолетний опыт и искренняя забота для ваших ног</div>
@@ -41,7 +40,7 @@ const goToAbout = () => {
 
 <style scoped lang="scss">
 .hero-section {
-  color: $white;
+  color: #4e4b46;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -52,7 +51,7 @@ const goToAbout = () => {
 }
 
 .hero-section__background {
-  background-position: left center;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
   inset: 0;
@@ -74,8 +73,13 @@ const goToAbout = () => {
   // max-width: 50%;
 }
 
+.hero-section__title {
+  font-weight: 700;
+}
+
 .hero-section__descr {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 </style>

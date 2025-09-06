@@ -39,7 +39,7 @@ const goToContactsSection = async () => {
 <template>
   <section class="about-section" id="about">
     <div
-      class="about-section__background"
+      class="about-section__bg"
       :style="{ backgroundImage: `url(${slides[currentSlide]})` }"
     ></div>
     <div class="about-section__overlay"></div>
@@ -156,7 +156,7 @@ const goToContactsSection = async () => {
   user-select: none;
 }
 
-.about-section__background {
+.about-section__bg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +166,7 @@ const goToContactsSection = async () => {
 }
 
 .about-section__overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(0 0 0 / 40%);
   inset: 0;
   pointer-events: none;
   position: absolute;
@@ -192,7 +192,7 @@ const goToContactsSection = async () => {
   z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .about-section__content {
     font-size: 16px;
     gap: 16px;
@@ -202,7 +202,7 @@ const goToContactsSection = async () => {
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .about-section__content {
     font-size: 14px;
     gap: 12px;
@@ -214,16 +214,16 @@ const goToContactsSection = async () => {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 50px;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 8px rgb(0 0 0 / 70%);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .about-section__title {
     font-size: 22px;
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .about-section__title {
     font-size: 18px;
   }
@@ -233,16 +233,16 @@ const goToContactsSection = async () => {
 
 .specialisation {
   color: #333;
+  line-height: 1.55;
   margin: 40px auto;
   max-width: 800px;
   padding: 2rem 4rem;
   text-align: left;
-  line-height: 1.55;
 }
 
 .specialisation__title {
-  margin-bottom: 1.25rem;
   font-size: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .specialisation__paragraph {
@@ -254,7 +254,7 @@ const goToContactsSection = async () => {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .specialisation {
     max-width: 100%;
     padding: 0 15px;
@@ -272,78 +272,80 @@ const goToContactsSection = async () => {
 /* --------------------------------- */
 
 .podology-issues {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
   padding: 2rem 1rem;
 }
 
 .podology-issues__title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 2rem;
   letter-spacing: 0.05em;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .podology-issues__subtitle {
+  color: #333;
   font-size: 18px;
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
   letter-spacing: 0.05em;
-  color: #333;
+  margin: 0 0 0.5rem;
 }
 
 .podology-issues__list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .podology-issues__item {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   gap: 1rem;
   margin-bottom: 1.8rem;
 }
 
 .podology-issues__number {
-  flex-shrink: 0;
-  width: 36px;
-  height: 36px;
-  background-color: #f60; /* оранжевый */
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #f60; /* оранжевый */
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  height: 36px;
+  justify-content: center;
   letter-spacing: 0.1em;
   user-select: none;
+  width: 36px;
 }
 
 .podology-issues__text {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  margin: 0;
   color: #333;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Адаптив */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .podology-issues__title {
     font-size: 24px;
   }
+
   .podology-issues__text {
     font-size: 15px;
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .podology-issues__title {
     font-size: 20px;
   }
+
   .podology-issues__text {
     font-size: 14px;
   }

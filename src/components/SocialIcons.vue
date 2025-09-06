@@ -25,17 +25,20 @@
 .social-icons {
   display: flex;
   gap: 1rem;
+
+  @media (width <= 1140px) {
+    gap: 0.5rem;
+  }
 }
 
 .social-icons__item {
   background-repeat: no-repeat;
-  height: 2rem;
+  background-size: contain;
   display: block;
   height: 2rem;
   max-width: 100%;
   transition: 0.15s ease-in-out;
   width: 2rem;
-  background-size: contain;
 
   &:hover {
     opacity: 0.6;

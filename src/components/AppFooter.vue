@@ -86,18 +86,27 @@ const scrollToSection = (id: string) => {
 
 .footer__container {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
   justify-content: center;
+
+  @media (width <= 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .footer__block {
-  flex: 1 1 220px;
   display: flex;
+  flex: 1 1 220px;
   flex-direction: column;
   gap: 16px;
-  min-width: 220px;
   margin-bottom: 0;
+  min-width: 220px;
+
+  @media (width <= 768px) {
+    min-width: 100%;
+  }
 }
 
 .footer__block--info {
@@ -106,9 +115,9 @@ const scrollToSection = (id: string) => {
 
 .footer__block--price,
 .footer__block--about {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-transform: uppercase;
 }
 
@@ -119,11 +128,11 @@ const scrollToSection = (id: string) => {
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
+  margin: 0;
   padding: 0;
   text-align: left;
   text-transform: uppercase;
   transition: color 0.3s ease;
-  margin: 0;
 }
 
 .footer__link:hover,
@@ -171,13 +180,20 @@ const scrollToSection = (id: string) => {
 .footer__bottom {
   border-top: 1px solid #444;
   display: flex;
+  flex-wrap: wrap;
   font-size: 12px;
   gap: 20px;
   justify-content: center;
   margin: 30px auto 0;
   max-width: 1200px;
   padding-top: 15px;
-  flex-wrap: wrap;
+
+  @media (width <= 768px) {
+    flex-direction: column;
+    font-size: 13px;
+    gap: 10px;
+    margin-top: 20px;
+  }
 }
 
 .footer__policy-link {
@@ -191,24 +207,5 @@ const scrollToSection = (id: string) => {
 .footer__policy-link:focus {
   color: #f60;
   outline: none;
-}
-
-/* Адаптив */
-@media (max-width: 768px) {
-  .footer__container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .footer__block {
-    min-width: 100%;
-  }
-
-  .footer__bottom {
-    flex-direction: column;
-    font-size: 13px;
-    gap: 10px;
-    margin-top: 20px;
-  }
 }
 </style>
