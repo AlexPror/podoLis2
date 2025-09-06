@@ -91,17 +91,19 @@ const scrollToSection = (id: string) => {
   justify-content: center;
 
   @media (width <= 768px) {
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 0;
     text-align: center;
   }
 
   @media (width <= 620px) {
-    gap: 12px;
+    row-gap: 8px;
   }
 
   @media (width <= 480px) {
-    gap: 10px;
+    row-gap: 6px;
   }
 }
 
@@ -109,22 +111,22 @@ const scrollToSection = (id: string) => {
   display: flex;
   flex: 1 1 220px;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   margin-bottom: 0;
   min-width: 220px;
 
   @media (width <= 768px) {
     min-width: 100%;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
   }
 
   @media (width <= 620px) {
-    gap: 10px;
+    gap: 6px;
   }
 
   @media (width <= 480px) {
-    gap: 8px;
+    gap: 4px;
   }
 }
 
