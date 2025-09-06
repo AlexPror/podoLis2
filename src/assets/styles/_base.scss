@@ -6,20 +6,67 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   color: #333;
   font-family: $base-font, sans-serif;
   line-height: 1.5;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+// Prevent horizontal scroll
+body {
+  overflow-x: hidden;
+}
 
 // Links
 a {
   color: $link-color;
   text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+// Focus styles for accessibility
+*:focus-visible {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+}
+
+// Better button styles
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+// Responsive typography
+@media (width <= 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 480px) {
+  body {
+    font-size: 15px;
+  }
 }

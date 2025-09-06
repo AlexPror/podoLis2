@@ -1,14 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/HomeView.vue'
-import About from '@/views/AboutView.vue'
-import Contacts from '@/components/ContactSection.vue'
-import Mda from '@/views/MdaView.vue'
 
 const routes = [
-  { path: '/', component: Home, name: 'Home' },
-  { path: '/about', component: About, name: 'About' },
-  { path: '/contacts', component: Contacts, name: 'Contacts' },
-  { path: '/mda', component: Mda, name: 'Mda' },
+  { path: '/', component: () => import('@/views/HomeView.vue'), name: 'Home' },
+  { path: '/about', component: () => import('@/views/AboutView.vue'), name: 'About' },
+  { path: '/contacts', component: () => import('@/components/ContactSection.vue'), name: 'Contacts' },
+  { path: '/mda', component: () => import('@/views/MdaView.vue'), name: 'Mda' },
 ]
 
 const router = createRouter({

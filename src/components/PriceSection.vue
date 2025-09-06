@@ -23,7 +23,7 @@ const services = [
       { title: 'Обработка кожи стоп при незначительных изменениях трещины/кератоз', price: 2000 },
       { title: 'Гигиеническая обработка кожи стоп /без ногтей/эстетика', price: 1600 },
       { title: 'Гигиеническая обработка ногтевых пластин /без изменений/эстетика', price: 1800 },
-      { title: 'Эстетический педикюр', price: 2400 },
+      { title: 'Эстетический педикюр', price: 2700 },
       { title: 'Вросший ноготь 1 ед. первичный прием', price: 1800 },
       { title: 'Вросший ноготь 1 ед. вторичный прием', price: 1400 },
       { title: 'Вросший ноготь 2 ед. первичный прием', price: 2500 },
@@ -224,11 +224,48 @@ const selectedService = computed(() => services[selectedIndex.value])
 
   .price__table {
     font-size: 14px;
+    border-radius: 6px;
   }
 
   .price__table thead th,
   .price__table tbody td {
-    padding: 10px 8px;
+    padding: 12px 8px;
+  }
+
+  .price__table tbody td:first-child {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+}
+
+@media (width <= 480px) {
+  .price__table-wrapper {
+    padding: 0 2px;
+  }
+
+  .price__table {
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .price__table thead th,
+  .price__table tbody td {
+    padding: 8px 6px;
+  }
+
+  .price__table thead th {
+    font-size: 11px;
+  }
+
+  .price__table tbody td:first-child {
+    font-size: 11px;
+    line-height: 1.4;
+    max-width: 180px;
+  }
+
+  .price__table tbody td:last-child {
+    font-size: 12px;
+    font-weight: 700;
   }
 }
 
@@ -237,17 +274,72 @@ const selectedService = computed(() => services[selectedIndex.value])
   gap: 10px;
   margin-bottom: 3rem;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+
+  @media (width <= 768px) {
+    gap: 8px;
+    margin-bottom: 2rem;
+  }
+
+  @media (width <= 620px) {
+    gap: 6px;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (width <= 480px) {
+    gap: 8px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .price__button {
   background: $white;
   border: none;
   border-radius: 2rem;
+  flex: 1;
+  min-width: 140px;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  line-height: 1.3;
+  height: auto;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (width <= 768px) {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+    min-width: 120px;
+    min-height: 2.2rem;
+  }
+
+  @media (width <= 620px) {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+    min-width: auto;
+    min-height: 2.2rem;
+  }
+
+  @media (width <= 480px) {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+    min-width: 100px;
+    min-height: 2rem;
+    line-height: 1.2;
+  }
   cursor: pointer;
-  flex: 1 1 0;
-  font-size: 20px;
   font-weight: 600;
-  padding: 10px;
   text-align: center;
   transition:
     background-color 0.3s ease,

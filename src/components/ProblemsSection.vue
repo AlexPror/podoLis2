@@ -41,7 +41,7 @@ const closeModal = () => {
           </div>
           <div class="card-buttons">
             <!-- <Button theme="secondary" size="small" to="/problems/fungus">Подробнее</Button> -->
-            <Button theme="primary" size="small" @click="openModal">Решить проблему</Button>
+            <Button theme="primary" size="small" @click="openModal">Записаться</Button>
           </div>
         </article>
 
@@ -61,7 +61,7 @@ const closeModal = () => {
           </div>
           <div class="card-buttons">
             <!-- <Button theme="secondary" size="small">Подробнее</Button> -->
-            <Button theme="primary" size="small" @click="openModal">Решить проблему</Button>
+            <Button theme="primary" size="small" @click="openModal">Записаться</Button>
           </div>
         </article>
 
@@ -81,7 +81,7 @@ const closeModal = () => {
           </div>
           <div class="card-buttons">
             <!-- <Button theme="secondary" size="small" to="/problems/cracks">Подробнее</Button> -->
-            <Button theme="primary" size="small" @click="openModal">Решить проблему</Button>
+            <Button theme="primary" size="small" @click="openModal">Записаться</Button>
           </div>
         </article>
       </div>
@@ -106,12 +106,24 @@ const closeModal = () => {
 .problems-section .title {
   font-size: 2.5rem;
   margin-bottom: 20px;
+
+  @media (width <= 620px) {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    padding: 0 1rem;
+  }
 }
 
 .problems-section .subtitle {
   color: #464646;
   font-size: 1.25rem;
   margin-bottom: 50px;
+
+  @media (width <= 620px) {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 0 1rem;
+  }
 }
 
 .problems-section .cards {
@@ -121,6 +133,11 @@ const closeModal = () => {
   gap: 2rem;
   justify-content: center;
   margin-bottom: 3rem;
+
+  @media (width <= 620px) {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .problems-section .card {
@@ -132,6 +149,12 @@ const closeModal = () => {
   flex-direction: column;
   max-width: 360px;
   overflow: hidden;
+
+  @media (width <= 620px) {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 .problems-section .card-image {
@@ -152,12 +175,21 @@ const closeModal = () => {
   justify-content: space-between;
   padding: 10px;
   text-align: left;
+
+  @media (width <= 620px) {
+    padding: 15px 10px;
+  }
 }
 
 .problems-section .card-title {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 15px;
+
+  @media (width <= 620px) {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
 }
 
 .problems-section .card-list {
@@ -171,6 +203,12 @@ const closeModal = () => {
   margin-bottom: 10px;
   padding-left: 20px;
   position: relative;
+
+  @media (width <= 620px) {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    padding-left: 18px;
+  }
 }
 
 .problems-section .card-list li::before {
@@ -195,6 +233,11 @@ const closeModal = () => {
   justify-content: center;
   margin-top: auto;
   padding: 10px;
+
+  @media (width <= 620px) {
+    padding: 15px 10px;
+    margin-top: 1rem;
+  }
 }
 
 .btn-orange {

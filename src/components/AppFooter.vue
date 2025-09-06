@@ -92,7 +92,16 @@ const scrollToSection = (id: string) => {
 
   @media (width <= 768px) {
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  @media (width <= 620px) {
+    gap: 12px;
+  }
+
+  @media (width <= 480px) {
+    gap: 10px;
   }
 }
 
@@ -106,6 +115,16 @@ const scrollToSection = (id: string) => {
 
   @media (width <= 768px) {
     min-width: 100%;
+    align-items: center;
+    gap: 12px;
+  }
+
+  @media (width <= 620px) {
+    gap: 10px;
+  }
+
+  @media (width <= 480px) {
+    gap: 8px;
   }
 }
 
@@ -133,6 +152,15 @@ const scrollToSection = (id: string) => {
   text-align: left;
   text-transform: uppercase;
   transition: color 0.3s ease;
+
+  @media (width <= 768px) {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  @media (width <= 480px) {
+    font-size: 16px;
+  }
 }
 
 .footer__link:hover,
@@ -161,6 +189,22 @@ const scrollToSection = (id: string) => {
   font-weight: 700;
   margin: 0 0 12px;
   text-transform: uppercase;
+
+  @media (width <= 768px) {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 8px;
+  }
+
+  @media (width <= 620px) {
+    font-size: 17px;
+    margin: 0 0 6px;
+  }
+
+  @media (width <= 480px) {
+    font-size: 16px;
+    margin: 0 0 5px;
+  }
 }
 
 .footer__reviews-text {
@@ -168,6 +212,20 @@ const scrollToSection = (id: string) => {
   font-size: 13px;
   line-height: 1.5;
   margin: 0;
+
+  @media (width <= 768px) {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  @media (width <= 620px) {
+    font-size: 11px;
+  }
+
+  @media (width <= 480px) {
+    font-size: 10px;
+  }
 }
 
 .footer__info-text {
@@ -175,6 +233,20 @@ const scrollToSection = (id: string) => {
   font-size: 13px;
   line-height: 1.5;
   margin: 0;
+
+  @media (width <= 768px) {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  @media (width <= 620px) {
+    font-size: 11px;
+  }
+
+  @media (width <= 480px) {
+    font-size: 10px;
+  }
 }
 
 .footer__bottom {
@@ -191,8 +263,23 @@ const scrollToSection = (id: string) => {
   @media (width <= 768px) {
     flex-direction: column;
     font-size: 13px;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 8px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  @media (width <= 620px) {
+    gap: 6px;
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+  @media (width <= 480px) {
+    font-size: 12px;
+    gap: 5px;
+    margin-top: 10px;
+    padding-top: 8px;
   }
 }
 

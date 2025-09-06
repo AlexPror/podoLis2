@@ -7,7 +7,11 @@ import AppFooter from '@/components/AppFooter.vue'
   <div class="app">
     <AppHeader class="app__header" />
     <main class="app__main">
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </RouterView>
     </main>
     <AppFooter class="app__footer" />
   </div>
@@ -27,5 +31,12 @@ import AppFooter from '@/components/AppFooter.vue'
 
 .app__main {
   flex: 1 0 auto;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .25s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>

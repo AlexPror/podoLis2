@@ -140,18 +140,118 @@ const openWhatsApp = () => {
 @media (width <= 768px) {
   .contacts {
     flex-direction: column;
-    padding: 40px 0; // чуть меньше отступы сверху/снизу на мобильных
+    padding: 40px 0;
+    gap: 0;
+    align-items: center;
   }
 
   .contacts__info,
   .contacts__map {
     flex: 1 1 100%;
-    margin: 0 0 30px; // отступ снизу для разделения блоков
-    padding: 0 15px; // внутренние отступы по бокам для мобильных
+    margin: 0 0 30px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .contacts__map {
-    height: 250px;
+    height: 280px;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    width: calc(100% - 30px);
+    max-width: 500px;
+  }
+
+  .contacts__title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .contacts__phones,
+  .contacts__worktime,
+  .contacts__whatsapp,
+  .contacts__address {
+    text-align: center;
+  }
+}
+
+@media (width <= 620px) {
+  .contacts__map {
+    height: 260px;
+    margin: 0 auto 25px;
+    padding: 0 10px;
+    width: calc(100% - 20px);
+    max-width: 450px;
+  }
+}
+
+@media (width <= 480px) {
+  .contacts__map {
+    height: 240px;
+    margin: 0 auto 20px;
+    padding: 0 5px;
+    width: calc(100% - 10px);
+    max-width: 400px;
+  }
+}
+
+@media (width <= 480px) {
+  .contacts {
+    padding: 30px 0;
+  }
+
+  .contacts__info {
+    padding: 0 10px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__phones,
+  .contacts__worktime,
+  .contacts__whatsapp,
+  .contacts__address {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .contacts__phone-link,
+  .contacts__whatsapp-link {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 330px) {
+  .contacts__map {
+    height: 220px;
+    margin: 0 auto 15px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contacts__info {
+    padding: 0 5px;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .contacts__phones,
+  .contacts__worktime,
+  .contacts__whatsapp,
+  .contacts__address {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .contacts__phone-link,
+  .contacts__whatsapp-link {
+    font-size: 14px;
   }
 }
 </style>
