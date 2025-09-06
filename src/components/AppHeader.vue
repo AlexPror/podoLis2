@@ -50,14 +50,14 @@ const toggleMobileMenu = () => {
         <nav class="mobile-menu__nav">
           <RouterLink 
             v-for="link in [
-              { name: 'Главная', href: '/' },
-              { name: 'О нас', href: '/about' },
-              { name: 'Прайс услуг', href: '/#price' },
-              { name: 'Контакты', href: '/#contacts' }
+              { name: 'Главная', to: { path: '/' } },
+              { name: 'О нас', to: { path: '/about' } },
+              { name: 'Прайс услуг', to: { path: '/', hash: '#price' } },
+              { name: 'Контакты', to: { path: '/', hash: '#contacts' } }
             ]" 
             :key="link.name" 
             class="mobile-menu__link" 
-            :to="link.href"
+            :to="link.to"
             @click="toggleMobileMenu"
           >
             {{ link.name }}

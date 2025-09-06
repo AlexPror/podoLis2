@@ -70,7 +70,7 @@ const goToAbout = () => {
 
   @media (width <= 768px) {
     background-position: center 20%;
-    background-size: 100% auto;
+    background-size: cover;
   }
 }
 

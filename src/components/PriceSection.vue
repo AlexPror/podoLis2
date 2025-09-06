@@ -300,6 +300,7 @@ const selectedService = computed(() => services[selectedIndex.value])
   background: $white;
   border: none;
   border-radius: 2rem;
+  color: $gray;
   flex: 1;
   min-width: 140px;
   font-size: 0.9rem;
@@ -313,6 +314,7 @@ const selectedService = computed(() => services[selectedIndex.value])
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 
   @media (width <= 768px) {
     font-size: 0.85rem;
@@ -347,7 +349,8 @@ const selectedService = computed(() => services[selectedIndex.value])
   user-select: none;
 }
 
-.price__button:hover {
+.price__button:hover,
+.price__button:focus {
   background-color: $primary-color;
   color: $white;
 }

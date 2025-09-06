@@ -177,7 +177,6 @@ const closeModal = () => {
 
   .problems-section .card-image img {
     object-position: center 25%;
-    transform: scale(0.95);
   }
 }
 
@@ -188,7 +187,6 @@ const closeModal = () => {
 
   .problems-section .card-image img {
     object-position: center 20%;
-    transform: scale(0.9);
   }
 }
 

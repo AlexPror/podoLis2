@@ -202,8 +202,8 @@ const goToContactsSection = async () => {
   }
 
   .about-section__bg {
-    background-position: center 20%;
-    background-size: 120% auto;
+    background-position: center 15%;
+    background-size: cover;
   }
 }
 
