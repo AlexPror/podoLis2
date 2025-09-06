@@ -7,7 +7,6 @@ const routes = [
   { path: '/mda', component: () => import('@/views/MdaView.vue'), name: 'Mda' },
   // Support GH Pages direct loads
   { path: '/index.html', redirect: '/' },
-  { path: '/:pathMatch(.*)*', redirect: '/' },
 ]
 
 const router = createRouter({

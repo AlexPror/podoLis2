@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const links = [
-  { name: 'Главная', href: '/' },
-  { name: 'О нас', href: '/about' },
-  { name: 'Прайс услуг', href: '/#price' },
-  { name: 'Контакты', href: '/#contacts' },
+  { name: 'Главная', href: { path: '/' } },
+  { name: 'О нас', href: { path: '/about' } },
+  { name: 'Прайс услуг', href: { path: '/', hash: '#price' } },
+  { name: 'Контакты', href: { path: '/', hash: '#contacts' } },
 ]
 </script>
 
