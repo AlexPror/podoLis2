@@ -5,10 +5,13 @@ const routes = [
   { path: '/about', component: () => import('@/views/AboutView.vue'), name: 'About' },
   { path: '/contacts', component: () => import('@/components/ContactSection.vue'), name: 'Contacts' },
   { path: '/mda', component: () => import('@/views/MdaView.vue'), name: 'Mda' },
+  // Support GH Pages direct loads
+  { path: '/index.html', redirect: '/' },
+  { path: '/:pathMatch(.*)*', redirect: '/' },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
