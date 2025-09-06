@@ -200,6 +200,11 @@ const goToContactsSection = async () => {
     padding: 0 15px;
     width: 90%;
   }
+
+  .about-section__bg {
+    background-position: center 20%;
+    background-size: 120% auto;
+  }
 }
 
 @media (width <= 400px) {

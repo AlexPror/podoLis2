@@ -166,7 +166,30 @@ const closeModal = () => {
   display: block;
   height: 100%;
   object-fit: cover;
+  object-position: center 30%;
   width: 100%;
+}
+
+@media (width <= 768px) {
+  .problems-section .card-image {
+    height: 180px;
+  }
+
+  .problems-section .card-image img {
+    object-position: center 25%;
+    transform: scale(0.95);
+  }
+}
+
+@media (width <= 480px) {
+  .problems-section .card-image {
+    height: 160px;
+  }
+
+  .problems-section .card-image img {
+    object-position: center 20%;
+    transform: scale(0.9);
+  }
 }
 
 .problems-section .card-content {

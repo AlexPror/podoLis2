@@ -69,7 +69,8 @@ const goToAbout = () => {
   z-index: 0;
 
   @media (width <= 768px) {
-    background-position: center center;
+    background-position: center 20%;
+    background-size: 100% auto;
   }
 }
 

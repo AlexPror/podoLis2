@@ -21,6 +21,7 @@ const openWhatsApp = () => {
             <a href="tel:+79141726408" class="contacts__phone-link">+7 914 172-64-08</a>
           </div>
           <div class="contacts__worktime">Мы работаем ежедневно с 9 до 20 часов</div>
+          <div class="contacts__worktime">Перерыв с 12 до 13 часов</div>
           <div class="contacts__worktime">По предварительной записи</div>
           <div class="contacts__whatsapp">
             Ссылка для записи через
